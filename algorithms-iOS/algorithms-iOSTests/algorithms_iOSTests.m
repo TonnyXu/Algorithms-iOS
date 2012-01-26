@@ -14,7 +14,9 @@
 {
     [super setUp];
     
-    // Set-up code here.
+    // Set-up CoreData
+  
+  
 }
 
 - (void)tearDown
@@ -28,5 +30,17 @@
 {
     STFail(@"Unit tests are not implemented yet in algorithms-iOSTests");
 }
+
+- (void)testInsertionSort
+{
+  STFail(@"Insertion Sort is not prepared yet.");
+}
+
+- (void)testMergeSort
+{
+  STFail(@"Merge Sort is not prepared yet.");
+}
+
+
 
 @end

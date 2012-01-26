@@ -19,9 +19,9 @@
         <attribute name="timeStamp" optional="YES" attributeType="Date"/>
     </entity>
     <elements>
-        <element name="Event" positionX="225" positionY="399" width="128" height="60"/>
-        <element name="Category" positionX="-144" positionY="3" width="128" height="75"/>
         <element name="Algorithm" positionX="52" positionY="117" width="128" height="105"/>
         <element name="AlgorithmGist" positionX="259" positionY="180" width="128" height="90"/>
+        <element name="Category" positionX="-144" positionY="3" width="128" height="75"/>
+        <element name="Event" positionX="225" positionY="399" width="128" height="60"/>
     </elements>
 </model>
