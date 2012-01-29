@@ -5,11 +5,15 @@
 	<dict>
 		<key>name</key>
 		<string>Divide &amp; Conquer</string>
+		<key>catId</key>
+		<integer>1</integer>
 		<key>shortDiscription</key>
 		<string>Recursion Algorithms</string>
 		<key>algorithms</key>
 		<array>
 			<dict>
+				<key>algId</key>
+				<integer>1</integer>
 				<key>name</key>
 				<string>Merge Sort</string>
 				<key>explanation</key>
@@ -23,6 +27,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>2</integer>
 				<key>name</key>
 				<string>X power to n(x^n)</string>
 				<key>explanation</key>
@@ -36,6 +42,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>3</integer>
 				<key>name</key>
 				<string>Maxium sub array</string>
 				<key>explanation</key>
@@ -49,6 +57,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>4</integer>
 				<key>name</key>
 				<string>Fibonacci Number</string>
 				<key>explanation</key>
@@ -62,6 +72,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>5</integer>
 				<key>name</key>
 				<string>Binary Search</string>
 				<key>explanation</key>
@@ -75,6 +87,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>6</integer>
 				<key>name</key>
 				<string>VLSI:Very Large Scale Integration</string>
 				<key>explanation</key>
@@ -88,6 +102,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>7</integer>
 				<key>name</key>
 				<string>Strassen&apos;s method</string>
 				<key>explanation</key>
@@ -105,11 +121,15 @@
 	<dict>
 		<key>name</key>
 		<string>Naive Algorithms</string>
+		<key>catId</key>
+		<string>99</string>
 		<key>shortDiscription</key>
 		<string>Know them, but do NOT use them</string>
 		<key>algorithms</key>
 		<array>
 			<dict>
+				<key>algId</key>
+				<integer>1</integer>
 				<key>name</key>
 				<string>Insertion Sort</string>
 				<key>explanation</key>
@@ -123,6 +143,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>2</integer>
 				<key>name</key>
 				<string>Fibonacci Number 1</string>
 				<key>explanation</key>
@@ -136,6 +158,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>3</integer>
 				<key>name</key>
 				<string>Fibonacci Number 2</string>
 				<key>explanation</key>
@@ -149,6 +173,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>4</integer>
 				<key>name</key>
 				<string>Fibonacci Number 3</string>
 				<key>explanation</key>
@@ -162,6 +188,8 @@
 				</dict>
 			</dict>
 			<dict>
+				<key>algId</key>
+				<integer>5</integer>
 				<key>name</key>
 				<string>n*n Matrix Multiplication</string>
 				<key>explanation</key>

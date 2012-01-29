@@ -21,9 +21,9 @@
    * Jan 30, 2012
    * 
    * After googling, this looks like a bug in CoreData/iOS5 with NSOrderedSet.
+   * Refer to: http://stackoverflow.com/questions/7385439/problems-with-nsorderedset
    * 
    */
-
   NSMutableOrderedSet* tempSet = [NSMutableOrderedSet orderedSetWithOrderedSet:self.algorithms];
   [tempSet addObject:value];
   self.algorithms = tempSet;

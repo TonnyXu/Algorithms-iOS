@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11D24" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Algorithm" representedClassName="Algorithm" syncable="YES">
+        <attribute name="algId" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="explanation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="algorithms" inverseEntity="Category" syncable="YES"/>
@@ -13,6 +14,7 @@
         <relationship name="algorithm" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Algorithm" inverseName="gist" inverseEntity="Algorithm" syncable="YES"/>
     </entity>
     <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="catId" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="shortDiscription" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="algorithms" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Algorithm" inverseName="category" inverseEntity="Algorithm" syncable="YES"/>
@@ -25,9 +27,9 @@
         <relationship name="algorithm" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Algorithm" inverseName="viewClassForVisualDemo" inverseEntity="Algorithm" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Algorithm" positionX="52" positionY="117" width="128" height="105"/>
+        <element name="Algorithm" positionX="52" positionY="117" width="128" height="135"/>
         <element name="AlgorithmGist" positionX="259" positionY="180" width="128" height="90"/>
-        <element name="Category" positionX="-144" positionY="3" width="128" height="75"/>
+        <element name="Category" positionX="-144" positionY="3" width="128" height="105"/>
         <element name="Event" positionX="225" positionY="399" width="128" height="60"/>
         <element name="VisualDemo" positionX="-36" positionY="282" width="128" height="75"/>
     </elements>
