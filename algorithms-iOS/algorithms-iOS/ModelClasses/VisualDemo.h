@@ -1,8 +1,8 @@
 //
-//  AlgorithmGist.h
+//  VisualDemo.h
 //  algorithms-iOS
 //
-//  Created by Tonny Xu on 1/24/12.
+//  Created by Tonny Xu on 1/29/12.
 //  Copyright (c) 2012 Tonny Xu. All rights reserved.
 //
 
@@ -11,10 +11,9 @@
 
 @class Algorithm;
 
-@interface AlgorithmGist : NSManagedObject
+@interface VisualDemo : NSManagedObject
 
-@property (nonatomic, retain) NSString * url;
-@property (nonatomic, retain) NSString * briefDiscription;
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) Algorithm *algorithm;
 
 @end

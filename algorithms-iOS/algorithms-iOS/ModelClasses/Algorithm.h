@@ -10,12 +10,13 @@
 #import <CoreData/CoreData.h>
 
 @class AlgorithmGist;
+@class Category;
 
 @interface Algorithm : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSNumber * hasVisualDemo;
-@property (nonatomic, retain) NSManagedObject *category;
+@property (nonatomic, retain) NSString * explanation;
+@property (nonatomic, retain) Category *category;
 @property (nonatomic, retain) AlgorithmGist *gist;
 
 @end

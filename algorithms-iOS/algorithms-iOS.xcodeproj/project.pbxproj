@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		CE01B33014D51E9300DD70DF /* TXSubThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01B32F14D51E9300DD70DF /* TXSubThreadMOC.m */; };
 		CE01B33B14D533C000DD70DF /* SLTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01B33A14D533C000DD70DF /* SLTrace.m */; };
+		CE5360BC14D59AE20002E553 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5360BB14D59AE20002E553 /* Category.m */; };
 		CE85361A14D0014600BD56C4 /* algorithms_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E15BABDD14BD4CE100BB9B65 /* algorithms_iOS.xcdatamodeld */; };
 		CE85363014D00AEC00BD56C4 /* TXMainThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */; };
+		CEF699E714D57B3500EEF0CB /* VisualDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF699E614D57B3500EEF0CB /* VisualDemo.m */; };
+		CEF699E914D57FC600EEF0CB /* AlgorithmsMasterViewData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF699E814D57FC600EEF0CB /* AlgorithmsMasterViewData.plist */; };
+		CEF699EC14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF699EB14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.m */; };
 		CEF9439914CEF78200BD0903 /* AlgorithmGist.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9439814CEF78200BD0903 /* AlgorithmGist.m */; };
 		CEF9439D14CEF78200BD0903 /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9439C14CEF78200BD0903 /* Algorithm.m */; };
-		CEF943A114CEF78200BD0903 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF943A014CEF78200BD0903 /* Category.m */; };
 		CEF943B014CEFEC900BD0903 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF943A914CEFEC900BD0903 /* icon-72.png */; };
 		CEF943B114CEFEC900BD0903 /* icon-small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF943AA14CEFEC900BD0903 /* icon-small-50.png */; };
 		CEF943B214CEFEC900BD0903 /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF943AB14CEFEC900BD0903 /* icon-small.png */; };
@@ -55,15 +58,21 @@
 		CE01B32F14D51E9300DD70DF /* TXSubThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSubThreadMOC.m; sourceTree = "<group>"; };
 		CE01B33914D533C000DD70DF /* SLTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTrace.h; sourceTree = "<group>"; };
 		CE01B33A14D533C000DD70DF /* SLTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTrace.m; sourceTree = "<group>"; };
+		CE5360BA14D59AE20002E553 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = ModelClasses/Category.h; sourceTree = "<group>"; };
+		CE5360BB14D59AE20002E553 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = ModelClasses/Category.m; sourceTree = "<group>"; };
 		CE85362C14D00AEC00BD56C4 /* TXMainThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMainThreadMOC.h; sourceTree = "<group>"; };
 		CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMainThreadMOC.m; sourceTree = "<group>"; };
 		CE85362E14D00AEC00BD56C4 /* TXSubThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSubThreadMOC.h; sourceTree = "<group>"; };
+		CEF699E414D5642A00EEF0CB /* ModelClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelClasses.h; path = ModelClasses/ModelClasses.h; sourceTree = "<group>"; };
+		CEF699E514D57B3500EEF0CB /* VisualDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisualDemo.h; path = ModelClasses/VisualDemo.h; sourceTree = "<group>"; };
+		CEF699E614D57B3500EEF0CB /* VisualDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisualDemo.m; path = ModelClasses/VisualDemo.m; sourceTree = "<group>"; };
+		CEF699E814D57FC600EEF0CB /* AlgorithmsMasterViewData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AlgorithmsMasterViewData.plist; sourceTree = "<group>"; };
+		CEF699EA14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+SafelySetValue.h"; path = "ModelClasses/NSManagedObject+SafelySetValue.h"; sourceTree = "<group>"; };
+		CEF699EB14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+SafelySetValue.m"; path = "ModelClasses/NSManagedObject+SafelySetValue.m"; sourceTree = "<group>"; };
 		CEF9439714CEF78200BD0903 /* AlgorithmGist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlgorithmGist.h; path = ModelClasses/AlgorithmGist.h; sourceTree = "<group>"; };
 		CEF9439814CEF78200BD0903 /* AlgorithmGist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlgorithmGist.m; path = ModelClasses/AlgorithmGist.m; sourceTree = "<group>"; };
 		CEF9439B14CEF78200BD0903 /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Algorithm.h; path = ModelClasses/Algorithm.h; sourceTree = "<group>"; };
 		CEF9439C14CEF78200BD0903 /* Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Algorithm.m; path = ModelClasses/Algorithm.m; sourceTree = "<group>"; };
-		CEF9439F14CEF78200BD0903 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = ModelClasses/Category.h; sourceTree = "<group>"; };
-		CEF943A014CEF78200BD0903 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = ModelClasses/Category.m; sourceTree = "<group>"; };
 		CEF943A914CEFEC900BD0903 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
 		CEF943AA14CEFEC900BD0903 /* icon-small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small-50.png"; sourceTree = "<group>"; };
 		CEF943AB14CEFEC900BD0903 /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
@@ -126,6 +135,8 @@
 		CE01B33114D520AB00DD70DF /* Common Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CEF699EA14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.h */,
+				CEF699EB14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.m */,
 				CE01B33914D533C000DD70DF /* SLTrace.h */,
 				CE01B33A14D533C000DD70DF /* SLTrace.m */,
 			);
@@ -146,8 +157,11 @@
 		CEF9439514CEF74500BD0903 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CEF9439F14CEF78200BD0903 /* Category.h */,
-				CEF943A014CEF78200BD0903 /* Category.m */,
+				CE5360BA14D59AE20002E553 /* Category.h */,
+				CE5360BB14D59AE20002E553 /* Category.m */,
+				CEF699E414D5642A00EEF0CB /* ModelClasses.h */,
+				CEF699E514D57B3500EEF0CB /* VisualDemo.h */,
+				CEF699E614D57B3500EEF0CB /* VisualDemo.m */,
 				CEF9439B14CEF78200BD0903 /* Algorithm.h */,
 				CEF9439C14CEF78200BD0903 /* Algorithm.m */,
 				CEF9439714CEF78200BD0903 /* AlgorithmGist.h */,
@@ -236,6 +250,7 @@
 		E15BABF314BD4CE100BB9B65 /* algorithms-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEF699E814D57FC600EEF0CB /* AlgorithmsMasterViewData.plist */,
 				E15BABF914BD4CE100BB9B65 /* algorithms_iOSTests.h */,
 				E15BABFA14BD4CE100BB9B65 /* algorithms_iOSTests.m */,
 				E15BABF414BD4CE100BB9B65 /* Supporting Files */,
@@ -341,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E15BABF814BD4CE100BB9B65 /* InfoPlist.strings in Resources */,
+				CEF699E914D57FC600EEF0CB /* AlgorithmsMasterViewData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,10 +390,12 @@
 				E15BABE514BD4CE100BB9B65 /* TXDetailViewController.m in Sources */,
 				CEF9439914CEF78200BD0903 /* AlgorithmGist.m in Sources */,
 				CEF9439D14CEF78200BD0903 /* Algorithm.m in Sources */,
-				CEF943A114CEF78200BD0903 /* Category.m in Sources */,
 				CE85363014D00AEC00BD56C4 /* TXMainThreadMOC.m in Sources */,
 				CE01B33014D51E9300DD70DF /* TXSubThreadMOC.m in Sources */,
 				CE01B33B14D533C000DD70DF /* SLTrace.m in Sources */,
+				CEF699E714D57B3500EEF0CB /* VisualDemo.m in Sources */,
+				CEF699EC14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.m in Sources */,
+				CE5360BC14D59AE20002E553 /* Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +540,7 @@
 				INFOPLIST_FILE = "algorithms-iOSTests/algorithms-iOSTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "{SRCROOT}/../algorithms-iOS/ModelClasses";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -539,6 +558,7 @@
 				INFOPLIST_FILE = "algorithms-iOSTests/algorithms-iOSTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "{SRCROOT}/../algorithms-iOS/ModelClasses";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

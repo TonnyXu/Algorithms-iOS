@@ -7,12 +7,12 @@
 //
 
 #import "AlgorithmGist.h"
-
+#import "Algorithm.h"
 
 @implementation AlgorithmGist
 
 @dynamic url;
-@dynamic brief_discription;
+@dynamic briefDiscription;
 @dynamic algorithm;
 
 @end
