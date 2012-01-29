@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE01B33014D51E9300DD70DF /* TXSubThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01B32F14D51E9300DD70DF /* TXSubThreadMOC.m */; };
+		CE01B33B14D533C000DD70DF /* SLTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01B33A14D533C000DD70DF /* SLTrace.m */; };
 		CE85361A14D0014600BD56C4 /* algorithms_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E15BABDD14BD4CE100BB9B65 /* algorithms_iOS.xcdatamodeld */; };
-		CE85363014D00AEC00BD56C4 /* MBHDMainThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85362D14D00AEC00BD56C4 /* MBHDMainThreadMOC.m */; };
-		CE85363114D00AEC00BD56C4 /* MBHDSubThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85362F14D00AEC00BD56C4 /* MBHDSubThreadMOC.m */; };
+		CE85363014D00AEC00BD56C4 /* TXMainThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */; };
 		CEF9439914CEF78200BD0903 /* AlgorithmGist.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9439814CEF78200BD0903 /* AlgorithmGist.m */; };
-		CEF9439A14CEF78200BD0903 /* AlgorithmGist.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9439814CEF78200BD0903 /* AlgorithmGist.m */; };
 		CEF9439D14CEF78200BD0903 /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9439C14CEF78200BD0903 /* Algorithm.m */; };
-		CEF9439E14CEF78200BD0903 /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF9439C14CEF78200BD0903 /* Algorithm.m */; };
 		CEF943A114CEF78200BD0903 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF943A014CEF78200BD0903 /* Category.m */; };
-		CEF943A214CEF78200BD0903 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF943A014CEF78200BD0903 /* Category.m */; };
 		CEF943B014CEFEC900BD0903 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF943A914CEFEC900BD0903 /* icon-72.png */; };
 		CEF943B114CEFEC900BD0903 /* icon-small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF943AA14CEFEC900BD0903 /* icon-small-50.png */; };
 		CEF943B214CEFEC900BD0903 /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF943AB14CEFEC900BD0903 /* icon-small.png */; };
@@ -54,10 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE85362C14D00AEC00BD56C4 /* MBHDMainThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBHDMainThreadMOC.h; sourceTree = "<group>"; };
-		CE85362D14D00AEC00BD56C4 /* MBHDMainThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBHDMainThreadMOC.m; sourceTree = "<group>"; };
-		CE85362E14D00AEC00BD56C4 /* MBHDSubThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBHDSubThreadMOC.h; sourceTree = "<group>"; };
-		CE85362F14D00AEC00BD56C4 /* MBHDSubThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBHDSubThreadMOC.m; sourceTree = "<group>"; };
+		CE01B32F14D51E9300DD70DF /* TXSubThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSubThreadMOC.m; sourceTree = "<group>"; };
+		CE01B33914D533C000DD70DF /* SLTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTrace.h; sourceTree = "<group>"; };
+		CE01B33A14D533C000DD70DF /* SLTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTrace.m; sourceTree = "<group>"; };
+		CE85362C14D00AEC00BD56C4 /* TXMainThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMainThreadMOC.h; sourceTree = "<group>"; };
+		CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMainThreadMOC.m; sourceTree = "<group>"; };
+		CE85362E14D00AEC00BD56C4 /* TXSubThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSubThreadMOC.h; sourceTree = "<group>"; };
 		CEF9439714CEF78200BD0903 /* AlgorithmGist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlgorithmGist.h; path = ModelClasses/AlgorithmGist.h; sourceTree = "<group>"; };
 		CEF9439814CEF78200BD0903 /* AlgorithmGist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlgorithmGist.m; path = ModelClasses/AlgorithmGist.m; sourceTree = "<group>"; };
 		CEF9439B14CEF78200BD0903 /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Algorithm.h; path = ModelClasses/Algorithm.h; sourceTree = "<group>"; };
@@ -123,13 +123,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE01B33114D520AB00DD70DF /* Common Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE01B33914D533C000DD70DF /* SLTrace.h */,
+				CE01B33A14D533C000DD70DF /* SLTrace.m */,
+			);
+			name = "Common Extensions";
+			sourceTree = "<group>";
+		};
 		CE85362B14D00AB900BD56C4 /* Core Data Helper Class */ = {
 			isa = PBXGroup;
 			children = (
-				CE85362C14D00AEC00BD56C4 /* MBHDMainThreadMOC.h */,
-				CE85362D14D00AEC00BD56C4 /* MBHDMainThreadMOC.m */,
-				CE85362E14D00AEC00BD56C4 /* MBHDSubThreadMOC.h */,
-				CE85362F14D00AEC00BD56C4 /* MBHDSubThreadMOC.m */,
+				CE85362E14D00AEC00BD56C4 /* TXSubThreadMOC.h */,
+				CE01B32F14D51E9300DD70DF /* TXSubThreadMOC.m */,
+				CE85362C14D00AEC00BD56C4 /* TXMainThreadMOC.h */,
+				CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */,
 			);
 			name = "Core Data Helper Class";
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 		E15BABCB14BD4CE100BB9B65 /* algorithms-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CE01B33114D520AB00DD70DF /* Common Extensions */,
 				CE85362B14D00AB900BD56C4 /* Core Data Helper Class */,
 				CEF9439514CEF74500BD0903 /* Model */,
 				E15BABD414BD4CE100BB9B65 /* TXAppDelegate.h */,
@@ -365,8 +375,9 @@
 				CEF9439914CEF78200BD0903 /* AlgorithmGist.m in Sources */,
 				CEF9439D14CEF78200BD0903 /* Algorithm.m in Sources */,
 				CEF943A114CEF78200BD0903 /* Category.m in Sources */,
-				CE85363014D00AEC00BD56C4 /* MBHDMainThreadMOC.m in Sources */,
-				CE85363114D00AEC00BD56C4 /* MBHDSubThreadMOC.m in Sources */,
+				CE85363014D00AEC00BD56C4 /* TXMainThreadMOC.m in Sources */,
+				CE01B33014D51E9300DD70DF /* TXSubThreadMOC.m in Sources */,
+				CE01B33B14D533C000DD70DF /* SLTrace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,9 +386,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E15BABFB14BD4CE100BB9B65 /* algorithms_iOSTests.m in Sources */,
-				CEF9439A14CEF78200BD0903 /* AlgorithmGist.m in Sources */,
-				CEF9439E14CEF78200BD0903 /* Algorithm.m in Sources */,
-				CEF943A214CEF78200BD0903 /* Category.m in Sources */,
 				CE85361A14D0014600BD56C4 /* algorithms_iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +515,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "algorithms-iOS/algorithms-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LOGIC_TEST,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "algorithms-iOSTests/algorithms-iOSTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

@@ -1,26 +1,39 @@
 //
-//  MBHDMainThreadMOC.m
+//  TXMainThreadMOC.m
 //  BaseballHD
 //
 //  Created by Tonny on 11/06/27.
 //  Copyright 2011 genesix, Inc. All rights reserved.
 //
 
-#import "MBHDMainThreadMOC.h"
-#import "MBHDSubThreadMOC.h"
+#import "TXMainThreadMOC.h"
+#import "TXSubThreadMOC.h"
 
-@implementation MBHDMainThreadMOC
+#define DBFileName @"algorithms.sqlite"
+#define momdFolderName @"algorithms_iOS.momd"
+#define momFileName @"algorithms_iOS.mom"
+
+@interface TXMainThreadMOC()
+
+@property (nonatomic, retain, readwrite) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readwrite) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readwrite) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (NSURL *)applicationDocumentsDirectory;
+
+@end
+
+@implementation TXMainThreadMOC
 
 @synthesize managedObjectModel;
 @synthesize managedObjectContext;
 @synthesize persistentStoreCoordinator;
-//@synthesize feedbackBlock;
 
-+ (MBHDMainThreadMOC *)sharedMBHDMainThreadMOC{
-  static MBHDMainThreadMOC *sharedInstance = nil;
++ (TXMainThreadMOC *)sharedTXMainThreadMOC{
+  static TXMainThreadMOC *sharedInstance = nil;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    sharedInstance = [[MBHDMainThreadMOC alloc] init];
+    sharedInstance = [[TXMainThreadMOC alloc] init];
   });
   
   return sharedInstance;
@@ -34,13 +47,6 @@
      selector:@selector(mergeChanges:) 
      name:NSManagedObjectContextDidSaveNotification 
      object:nil]; // it's very important to set sender object to nil in BHD. 
-    /*
-     NOTE by Tonny
-     -------------
-     
-     For more information about NSNotification, please refer the document about
-     this method.
-     */
   }
   
   return self;
@@ -94,15 +100,11 @@
    Thanks to SO, this post helped: http://stackoverflow.com/questions/3067015/ocunit-nsbundle
    
    */
-  NSString *bundlePath = [[NSBundle bundleForClass:[MBHDMainThreadMOC class]] bundlePath];
-  NSString *momFilePath = [bundlePath stringByAppendingPathComponent:@"BHD.momd/BHD.mom"];
-  managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:momFilePath]];
+  NSString *bundlePath = [[NSBundle bundleForClass:[TXMainThreadMOC class]] bundlePath];
+  NSString *momFilePath = [bundlePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@" ,momdFolderName , momFileName]];
+  self.managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:momFilePath]];
 #else
-#if __has_feature(objc_arc)
-  managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
-#else
-  managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
-#endif
+  self.managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
 #endif
   
   return managedObjectModel;
@@ -117,25 +119,30 @@
   }
   
 #ifdef LOGIC_TEST
-//  NSString *bundlePath = [[[NSBundle bundleForClass:[MBHDMainThreadMOC class]] pathForResource:@"4_2_star_13x13" ofType:@"png"] stringByDeletingLastPathComponent];
-  NSString *bundlePath = [[NSBundle bundleForClass:[MBHDMainThreadMOC class]] bundlePath];
-  NSString *storePath = [bundlePath stringByAppendingPathComponent:@"BHD.sqlite"];
+  /* NOTE by Tonny
+   * Jan 29, 2012
+   * 
+   * Because the OCUnit bundle does not works as `[NSBundle mainBundle]` we need
+   * to use `bundleForClass` to get the correct bundle path.
+   */
+  NSString *bundlePath = [[NSBundle bundleForClass:[TXMainThreadMOC class]] bundlePath];
+  NSString *storePath = [bundlePath stringByAppendingPathComponent:DBFileName];
 #else
-	NSString *storePath = @"";//[[SLApp getDocumentFolder] stringByAppendingPathComponent:@"BHD.sqlite"];
+	NSString *storePath = [[[self applicationDocumentsDirectory] path] stringByAppendingPathComponent:DBFileName];
 #endif
   
 	// set up the backing store
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 	// If the expected store doesn't exist, copy the default store.
 	if (![fileManager fileExistsAtPath:storePath]) {
-		NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"BHD" ofType:@"sqlite"];
+		NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:DBFileName ofType:nil];
 		if (defaultStorePath) {
 			[fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
 		}
 	}
   
 	NSURL *storeUrl = [NSURL fileURLWithPath:storePath];
-//  SLLog(@"Store URL: %@", storeUrl);
+  SLLog(@"Store URL: %@", storeUrl);
   
 	NSError *error;
   persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
@@ -149,7 +156,7 @@
     // The schema for the persistent store is incompatible with current managed object model
     // Check the error message to determine what the actual problem was.
     //
-//		SLLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		SLLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		abort();
   }
   return persistentStoreCoordinator;
@@ -158,7 +165,6 @@
 // this is called via observing "NSManagedObjectContextDidSaveNotification" from SubThreadMOC
 - (void)mergeChanges:(NSNotification *)notification {
   
-  
 	NSManagedObjectContext *mainContext = [self managedObjectContext];
   if ([notification object] == mainContext) {
     // main context save, no need to perform the merge
@@ -166,24 +172,34 @@
   }
 
 #ifdef DEBUG
-//  NSLog(@"Main MOC merged info from sub");
+  NSLog(@"Main MOC merged info from sub");
 #endif
-//  SLLog(@"\n***************************************************************\n"
-//        "Got a notification from sub Moc and will merge the changes: \n"
-//        "\n***************************************************************\n");
   
   dispatch_sync(dispatch_get_main_queue(), ^(void) {
     [mainContext mergeChangesFromContextDidSaveNotification:notification];
-//    dispatch_async(dispatch_get_main_queue(), ^(void) {
-//      if (self.feedbackBlock) {
-//        feedbackBlock();
-//        
-//        // clean the feedback block after it it executed.
-//        self.feedbackBlock = nil;
-//      }
-//    });
   });
 }
+
+- (void)saveContext
+{
+  NSError *error = nil;
+  NSManagedObjectContext *mainMoc = self.managedObjectContext;
+  if (mainMoc != nil)
+  {
+    if ([mainMoc hasChanges] && ![mainMoc save:&error])
+    {
+      /*
+       Replace this implementation with code to handle the error appropriately.
+       
+       abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+       */
+      NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+      abort();
+    } 
+  }
+}
+
+
 
 #ifdef DEBUG
 - (void)deleteStoreFileAndRecreateStore{
@@ -201,5 +217,14 @@
 #else
 - (void)deleteStoreFileAndRecreateStore{}
 #endif
+
+#pragma mark - Application's Documents directory
+/**
+ Returns the URL to the application's Documents directory.
+ */
+- (NSURL *)applicationDocumentsDirectory
+{
+  return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
 
 @end

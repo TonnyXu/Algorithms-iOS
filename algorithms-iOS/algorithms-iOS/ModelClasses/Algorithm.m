@@ -3,7 +3,7 @@
 //  algorithms-iOS
 //
 //  Created by Tonny Xu on 1/24/12.
-//  Copyright (c) 2012 genesix Inc. All rights reserved.
+//  Copyright (c) 2012 Tonny Xu. All rights reserved.
 //
 
 #import "Algorithm.h"

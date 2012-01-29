@@ -1,5 +1,5 @@
 //
-//  MBHDSubThreadMOC.h
+//  TXSubThreadMOC.h
 //  BaseballHD
 //
 //  Created by Tonny on 11/06/28.
@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 
 
-@interface MBHDSubThreadMOC : NSObject 
+@interface TXSubThreadMOC : NSObject 
 
 @property (nonatomic, retain, readonly) NSManagedObjectContext *mocInitedOnSubThread;
 

@@ -3,7 +3,7 @@
 //  algorithms-iOS
 //
 //  Created by Tonny Xu on 12/01/11.
-//  Copyright (c) 2012 genesix Inc. All rights reserved.
+//  Copyright (c) 2012 Tonny Xu. All rights reserved.
 //
 
 #import "TXDetailViewController.h"
