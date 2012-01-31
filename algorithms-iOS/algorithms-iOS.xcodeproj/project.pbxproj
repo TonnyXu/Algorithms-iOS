@@ -157,9 +157,9 @@
 		CEF9439514CEF74500BD0903 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CEF699E414D5642A00EEF0CB /* ModelClasses.h */,
 				CE5360BA14D59AE20002E553 /* Category.h */,
 				CE5360BB14D59AE20002E553 /* Category.m */,
-				CEF699E414D5642A00EEF0CB /* ModelClasses.h */,
 				CEF699E514D57B3500EEF0CB /* VisualDemo.h */,
 				CEF699E614D57B3500EEF0CB /* VisualDemo.m */,
 				CEF9439B14CEF78200BD0903 /* Algorithm.h */,

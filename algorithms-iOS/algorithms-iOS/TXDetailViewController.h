@@ -10,8 +10,10 @@
 
 @interface TXDetailViewController : UIViewController <UISplitViewControllerDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) Algorithm *detailItem;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UILabel *algorithmNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *algorithmExplanationLabel;
+@property (strong, nonatomic) IBOutlet UIWebView *gistViewer;
 
 @end

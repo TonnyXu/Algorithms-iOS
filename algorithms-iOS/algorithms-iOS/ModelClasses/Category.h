@@ -14,6 +14,7 @@
 @interface Category : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * catId;
 @property (nonatomic, retain) NSString * shortDiscription;
 @property (nonatomic, retain) NSOrderedSet *algorithms;
 @end

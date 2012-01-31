@@ -13,6 +13,7 @@
 @implementation Category
 
 @dynamic name;
+@dynamic catId;
 @dynamic shortDiscription;
 @dynamic algorithms;
 
