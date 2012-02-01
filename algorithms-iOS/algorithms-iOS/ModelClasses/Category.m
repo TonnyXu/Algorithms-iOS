@@ -25,8 +25,10 @@
    * Refer to: http://stackoverflow.com/questions/7385439/problems-with-nsorderedset
    * 
    */
+  [self willChangeValueForKey:@"algorithms"];
   NSMutableOrderedSet* tempSet = [NSMutableOrderedSet orderedSetWithOrderedSet:self.algorithms];
   [tempSet addObject:value];
   self.algorithms = tempSet;
+  [self didChangeValueForKey:@"algorithms"];
 }
 @end

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CE01B33014D51E9300DD70DF /* TXSubThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01B32F14D51E9300DD70DF /* TXSubThreadMOC.m */; };
 		CE01B33B14D533C000DD70DF /* SLTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01B33A14D533C000DD70DF /* SLTrace.m */; };
+		CE4F131D14D92C1D003A8788 /* CLRS_InsertionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4F131C14D92C1C003A8788 /* CLRS_InsertionSort.c */; };
+		CE4F132114D96B59003A8788 /* CLRS_CommonFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4F132014D96B59003A8788 /* CLRS_CommonFunctions.c */; };
 		CE5360BC14D59AE20002E553 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5360BB14D59AE20002E553 /* Category.m */; };
 		CE85361A14D0014600BD56C4 /* algorithms_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E15BABDD14BD4CE100BB9B65 /* algorithms_iOS.xcdatamodeld */; };
 		CE85363014D00AEC00BD56C4 /* TXMainThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */; };
@@ -58,6 +60,10 @@
 		CE01B32F14D51E9300DD70DF /* TXSubThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXSubThreadMOC.m; sourceTree = "<group>"; };
 		CE01B33914D533C000DD70DF /* SLTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTrace.h; sourceTree = "<group>"; };
 		CE01B33A14D533C000DD70DF /* SLTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTrace.m; sourceTree = "<group>"; };
+		CE4F131C14D92C1C003A8788 /* CLRS_InsertionSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLRS_InsertionSort.c; sourceTree = "<group>"; };
+		CE4F131E14D9693C003A8788 /* CLRS_InsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRS_InsertionSort.h; sourceTree = "<group>"; };
+		CE4F131F14D96B0E003A8788 /* CLRS_CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRS_CommonFunctions.h; sourceTree = "<group>"; };
+		CE4F132014D96B59003A8788 /* CLRS_CommonFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLRS_CommonFunctions.c; sourceTree = "<group>"; };
 		CE5360BA14D59AE20002E553 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = ModelClasses/Category.h; sourceTree = "<group>"; };
 		CE5360BB14D59AE20002E553 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = ModelClasses/Category.m; sourceTree = "<group>"; };
 		CE85362C14D00AEC00BD56C4 /* TXMainThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMainThreadMOC.h; sourceTree = "<group>"; };
@@ -143,6 +149,33 @@
 			name = "Common Extensions";
 			sourceTree = "<group>";
 		};
+		CE4F131914D92ADF003A8788 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F131F14D96B0E003A8788 /* CLRS_CommonFunctions.h */,
+				CE4F132014D96B59003A8788 /* CLRS_CommonFunctions.c */,
+				CE4F131B14D92AEF003A8788 /* Divide & Conquer */,
+				CE4F131A14D92AE7003A8788 /* Naive Algorithms */,
+			);
+			name = Algorithms;
+			sourceTree = "<group>";
+		};
+		CE4F131A14D92AE7003A8788 /* Naive Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F131E14D9693C003A8788 /* CLRS_InsertionSort.h */,
+				CE4F131C14D92C1C003A8788 /* CLRS_InsertionSort.c */,
+			);
+			name = "Naive Algorithms";
+			sourceTree = "<group>";
+		};
+		CE4F131B14D92AEF003A8788 /* Divide & Conquer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Divide & Conquer";
+			sourceTree = "<group>";
+		};
 		CE85362B14D00AB900BD56C4 /* Core Data Helper Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +251,7 @@
 		E15BABCB14BD4CE100BB9B65 /* algorithms-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CE4F131914D92ADF003A8788 /* Algorithms */,
 				CE01B33114D520AB00DD70DF /* Common Extensions */,
 				CE85362B14D00AB900BD56C4 /* Core Data Helper Class */,
 				CEF9439514CEF74500BD0903 /* Model */,
@@ -396,6 +430,8 @@
 				CEF699E714D57B3500EEF0CB /* VisualDemo.m in Sources */,
 				CEF699EC14D5962E00EEF0CB /* NSManagedObject+SafelySetValue.m in Sources */,
 				CE5360BC14D59AE20002E553 /* Category.m in Sources */,
+				CE4F131D14D92C1D003A8788 /* CLRS_InsertionSort.c in Sources */,
+				CE4F132114D96B59003A8788 /* CLRS_CommonFunctions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +502,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					TONNY_IOS_APP,
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -475,6 +512,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -489,12 +527,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = TONNY_IOS_APP;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
