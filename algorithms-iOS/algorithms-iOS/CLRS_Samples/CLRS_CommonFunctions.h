@@ -2,7 +2,7 @@
 //  common_functions.h
 //  algorithms-iOS
 //
-//  Created by 廷 徐 on 2/1/12.
+//  Created by Tonny Xu on 2/1/12.
 //  Copyright (c) 2012 Tonny Xu. All rights reserved.
 //
 

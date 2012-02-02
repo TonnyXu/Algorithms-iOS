@@ -8,7 +8,7 @@
 
 #import "TXAppDelegate.h"
 #import "TXMainThreadMOC.h"
-#import "CLRS_InsertionSort.h"
+#import "CLRS_NaiveAlgorithms.h"
 
 #import "TXMasterViewController.h"
 
@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  doInsertionSort(10000);
+  doInsertionSort(100000);
   
     // Override point for customization after application launch.
   if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {

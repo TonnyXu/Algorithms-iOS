@@ -1,8 +1,8 @@
 //
-//  CLRS_InsertionSort.c
+//  CLRS_BubbleSort.c
 //  algorithms-iOS
 //
-//  Created by Tonny Xu on 2/1/12.
+//  Created by Tonny Xu on 2/2/12.
 //  Copyright (c) 2012 Tonny Xu. All rights reserved.
 //
 
@@ -10,19 +10,21 @@
 #include <sys/time.h>
 #include <limits.h>
 #include <math.h>
+
 #import "CLRS_NaiveAlgorithms.h"
 #import "CLRS_CommonFunctions.h"
 
 #ifndef TONNY_IOS_APP
 int main(void){
-  doInsertionSort(100000);
+  doBubbleSort(100000);
 }
 #endif
 
 
-void doInsertionSort(unsigned int numberOfElements)
+// a.k.a Sinking Sort
+void doBubbleSort(unsigned int numberOfElements)
 {
-  const char* algorithmName = "Insertion Sort";
+  const char* algorithmName = "Bubble Sort";
   printf("[%s] sort %d elements.\n", algorithmName, numberOfElements);
   int array[numberOfElements];
   
@@ -37,16 +39,18 @@ void doInsertionSort(unsigned int numberOfElements)
   struct timeval start;
   gettimeofday(&start, NULL);
   
-  // Insertion sort.
-  for (int i = 1; i < numberOfElements; i++) {
-    int j = i-1;
-    int key = array[i];
-    // 0...j is the subarray that is already sorted.
-    while (j >= 0 && array[j] > key) {
-      array[j+1] = array[j];
-      j--;
+  for (int i=0; i<numberOfElements-1; i++) {
+    for (int j=i+1; j<numberOfElements; j++) {
+      if (array[j] < array[i]) {
+        // you can choose either use xorSwap or not. xorSwap actually cost much more time.
+        
+        // xorSwap(&array[i], &array[j]);
+        
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
     }
-    array[j+1] = key;
   }
   
   struct timeval ended;
@@ -60,6 +64,4 @@ void doInsertionSort(unsigned int numberOfElements)
   }
   printf("\n");
   printf("[%s] top %d sorted elements.\n", algorithmName, minNumOfElements);
-
 }
-
