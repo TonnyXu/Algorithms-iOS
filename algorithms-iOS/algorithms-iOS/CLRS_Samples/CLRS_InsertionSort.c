@@ -16,7 +16,7 @@
 #ifndef TONNY_IOS_APP
 int main(void){
   printf("Here we are.");
-  doInsertionSort();
+  doInsertionSort(10000);
 }
 #endif
 
