@@ -15,14 +15,12 @@
 
 #ifndef TONNY_IOS_APP
 int main(void){
-  printf("Here we are.");
-  doInsertionSort(10000);
+  doInsertionSort(100000);
 }
 #endif
 
 
 void doInsertionSort(unsigned int numberOfElements){
-//  int numberOfElements = 100000;
   int array[numberOfElements];
   
   generateInt32Array(array, numberOfElements, 1, numberOfElements);
