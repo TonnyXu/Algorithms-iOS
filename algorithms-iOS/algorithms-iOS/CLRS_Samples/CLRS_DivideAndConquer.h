@@ -11,5 +11,12 @@
 
 void doMergeSort(unsigned int numberOfElements);
 
+void doFibonacci4(unsigned int index);
+
+void doPowerToN(int x, int exponential);
+
+void doStrassenMultiplication(void);
+
+void doBinarySearch(int targetToSearch);
 
 #endif

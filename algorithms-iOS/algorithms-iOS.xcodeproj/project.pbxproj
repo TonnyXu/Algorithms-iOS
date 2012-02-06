@@ -12,6 +12,19 @@
 		CE4F132714DA49C0003A8788 /* CLRS_InsertionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4F132514DA49C0003A8788 /* CLRS_InsertionSort.c */; };
 		CE4F132A14DA49CB003A8788 /* CLRS_CommonFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4F132814DA49CA003A8788 /* CLRS_CommonFunctions.c */; };
 		CE5360BC14D59AE20002E553 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5360BB14D59AE20002E553 /* Category.m */; };
+		CE5D694B14DF6205001123DF /* CLRS_Fibonacci_1.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694A14DF6205001123DF /* CLRS_Fibonacci_1.c */; };
+		CE5D694E14DF621A001123DF /* CLRS_Fibonacci_2.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694D14DF621A001123DF /* CLRS_Fibonacci_2.c */; };
+		CE5D695014DF622A001123DF /* CLRS_Fibonacci_3.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694F14DF6229001123DF /* CLRS_Fibonacci_3.c */; };
+		CE5D695214DF6239001123DF /* CLRS_Fibonacci_4.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695114DF6239001123DF /* CLRS_Fibonacci_4.c */; };
+		CE5D695414DF6282001123DF /* CLRS_PowerToN.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695314DF6282001123DF /* CLRS_PowerToN.c */; };
+		CE5D695614DF6408001123DF /* CLRS_Stranssen.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695514DF6408001123DF /* CLRS_Stranssen.c */; };
+		CE5D695814DF642E001123DF /* CLRS_MatrxMultiplication.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */; };
+		CE5D695A14DF64F2001123DF /* CLRS_BinarySearch.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695914DF64F2001123DF /* CLRS_BinarySearch.c */; };
+		CE5D695D14DF65B0001123DF /* CLRS_HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */; };
+		CE5D695F14DF65C0001123DF /* CLRS_QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */; };
+		CE5D696114DF66CE001123DF /* CLRS_CountingSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */; };
+		CE5D696314DF66FC001123DF /* CLRS_StubleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696214DF66FC001123DF /* CLRS_StubleSort.c */; };
+		CE5D696514DF6758001123DF /* CLRS_RadixSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696414DF6758001123DF /* CLRS_RadixSort.c */; };
 		CE85361A14D0014600BD56C4 /* algorithms_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E15BABDD14BD4CE100BB9B65 /* algorithms_iOS.xcdatamodeld */; };
 		CE85363014D00AEC00BD56C4 /* TXMainThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */; };
 		CEF699E714D57B3500EEF0CB /* VisualDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF699E614D57B3500EEF0CB /* VisualDemo.m */; };
@@ -69,6 +82,19 @@
 		CE4F132B14DA52EC003A8788 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = makefile; path = CLRS_Samples/makefile; sourceTree = "<group>"; };
 		CE5360BA14D59AE20002E553 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = ModelClasses/Category.h; sourceTree = "<group>"; };
 		CE5360BB14D59AE20002E553 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = ModelClasses/Category.m; sourceTree = "<group>"; };
+		CE5D694A14DF6205001123DF /* CLRS_Fibonacci_1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_1.c; path = CLRS_Samples/CLRS_Fibonacci_1.c; sourceTree = "<group>"; };
+		CE5D694D14DF621A001123DF /* CLRS_Fibonacci_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_2.c; path = CLRS_Samples/CLRS_Fibonacci_2.c; sourceTree = "<group>"; };
+		CE5D694F14DF6229001123DF /* CLRS_Fibonacci_3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_3.c; path = CLRS_Samples/CLRS_Fibonacci_3.c; sourceTree = "<group>"; };
+		CE5D695114DF6239001123DF /* CLRS_Fibonacci_4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_4.c; path = CLRS_Samples/CLRS_Fibonacci_4.c; sourceTree = "<group>"; };
+		CE5D695314DF6282001123DF /* CLRS_PowerToN.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_PowerToN.c; path = CLRS_Samples/CLRS_PowerToN.c; sourceTree = "<group>"; };
+		CE5D695514DF6408001123DF /* CLRS_Stranssen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Stranssen.c; path = CLRS_Samples/CLRS_Stranssen.c; sourceTree = "<group>"; };
+		CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_MatrxMultiplication.c; path = CLRS_Samples/CLRS_MatrxMultiplication.c; sourceTree = "<group>"; };
+		CE5D695914DF64F2001123DF /* CLRS_BinarySearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_BinarySearch.c; path = CLRS_Samples/CLRS_BinarySearch.c; sourceTree = "<group>"; };
+		CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_HeapSort.c; path = CLRS_Samples/CLRS_HeapSort.c; sourceTree = "<group>"; };
+		CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_QuickSort.c; path = CLRS_Samples/CLRS_QuickSort.c; sourceTree = "<group>"; };
+		CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_CountingSort.c; path = CLRS_Samples/CLRS_CountingSort.c; sourceTree = "<group>"; };
+		CE5D696214DF66FC001123DF /* CLRS_StubleSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_StubleSort.c; path = CLRS_Samples/CLRS_StubleSort.c; sourceTree = "<group>"; };
+		CE5D696414DF6758001123DF /* CLRS_RadixSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_RadixSort.c; path = CLRS_Samples/CLRS_RadixSort.c; sourceTree = "<group>"; };
 		CE85362C14D00AEC00BD56C4 /* TXMainThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMainThreadMOC.h; sourceTree = "<group>"; };
 		CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMainThreadMOC.m; sourceTree = "<group>"; };
 		CE85362E14D00AEC00BD56C4 /* TXSubThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSubThreadMOC.h; sourceTree = "<group>"; };
@@ -173,6 +199,10 @@
 				CE4F132614DA49C0003A8788 /* CLRS_NaiveAlgorithms.h */,
 				CE4F132514DA49C0003A8788 /* CLRS_InsertionSort.c */,
 				CEF8D79F14DAB3FB008B03A1 /* CLRS_BubbleSort.c */,
+				CE5D694A14DF6205001123DF /* CLRS_Fibonacci_1.c */,
+				CE5D694D14DF621A001123DF /* CLRS_Fibonacci_2.c */,
+				CE5D694F14DF6229001123DF /* CLRS_Fibonacci_3.c */,
+				CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */,
 			);
 			name = "Naive Algorithms";
 			sourceTree = "<group>";
@@ -180,10 +210,27 @@
 		CE4F131B14D92AEF003A8788 /* Divide & Conquer */ = {
 			isa = PBXGroup;
 			children = (
+				CE5D695B14DF6569001123DF /* Sort */,
 				CEF8D79C14DAB365008B03A1 /* CLRS_DivideAndConquer.h */,
 				CEF8D79D14DAB37C008B03A1 /* CLRS_MergeSort.c */,
+				CE5D695114DF6239001123DF /* CLRS_Fibonacci_4.c */,
+				CE5D695314DF6282001123DF /* CLRS_PowerToN.c */,
+				CE5D695514DF6408001123DF /* CLRS_Stranssen.c */,
+				CE5D695914DF64F2001123DF /* CLRS_BinarySearch.c */,
 			);
 			name = "Divide & Conquer";
+			sourceTree = "<group>";
+		};
+		CE5D695B14DF6569001123DF /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */,
+				CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */,
+				CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */,
+				CE5D696214DF66FC001123DF /* CLRS_StubleSort.c */,
+				CE5D696414DF6758001123DF /* CLRS_RadixSort.c */,
+			);
+			name = Sort;
 			sourceTree = "<group>";
 		};
 		CE85362B14D00AB900BD56C4 /* Core Data Helper Class */ = {
@@ -444,6 +491,19 @@
 				CE4F132A14DA49CB003A8788 /* CLRS_CommonFunctions.c in Sources */,
 				CEF8D79E14DAB37C008B03A1 /* CLRS_MergeSort.c in Sources */,
 				CEF8D7A014DAB3FB008B03A1 /* CLRS_BubbleSort.c in Sources */,
+				CE5D694B14DF6205001123DF /* CLRS_Fibonacci_1.c in Sources */,
+				CE5D694E14DF621A001123DF /* CLRS_Fibonacci_2.c in Sources */,
+				CE5D695014DF622A001123DF /* CLRS_Fibonacci_3.c in Sources */,
+				CE5D695214DF6239001123DF /* CLRS_Fibonacci_4.c in Sources */,
+				CE5D695414DF6282001123DF /* CLRS_PowerToN.c in Sources */,
+				CE5D695614DF6408001123DF /* CLRS_Stranssen.c in Sources */,
+				CE5D695814DF642E001123DF /* CLRS_MatrxMultiplication.c in Sources */,
+				CE5D695A14DF64F2001123DF /* CLRS_BinarySearch.c in Sources */,
+				CE5D695D14DF65B0001123DF /* CLRS_HeapSort.c in Sources */,
+				CE5D695F14DF65C0001123DF /* CLRS_QuickSort.c in Sources */,
+				CE5D696114DF66CE001123DF /* CLRS_CountingSort.c in Sources */,
+				CE5D696314DF66FC001123DF /* CLRS_StubleSort.c in Sources */,
+				CE5D696514DF6758001123DF /* CLRS_RadixSort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

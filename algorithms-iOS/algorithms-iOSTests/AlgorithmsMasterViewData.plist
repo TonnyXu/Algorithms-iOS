@@ -131,6 +131,21 @@
 				<key>algId</key>
 				<integer>1</integer>
 				<key>name</key>
+				<string>Bubble Sort</string>
+				<key>explanation</key>
+				<string>Cost O(n^2)</string>
+				<key>gist</key>
+				<dict>
+					<key>url</key>
+					<string>https://gist.github.com/1730843</string>
+					<key>briefDescription</key>
+					<string>Refer to CLRS 3e, page 40</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>algId</key>
+				<integer>2</integer>
+				<key>name</key>
 				<string>Insertion Sort</string>
 				<key>explanation</key>
 				<string>Cost O(n^2)</string>
@@ -144,7 +159,7 @@
 			</dict>
 			<dict>
 				<key>algId</key>
-				<integer>2</integer>
+				<integer>3</integer>
 				<key>name</key>
 				<string>Fibonacci Number 1</string>
 				<key>explanation</key>
@@ -159,7 +174,7 @@
 			</dict>
 			<dict>
 				<key>algId</key>
-				<integer>3</integer>
+				<integer>4</integer>
 				<key>name</key>
 				<string>Fibonacci Number 2</string>
 				<key>explanation</key>
@@ -174,7 +189,7 @@
 			</dict>
 			<dict>
 				<key>algId</key>
-				<integer>4</integer>
+				<integer>5</integer>
 				<key>name</key>
 				<string>Fibonacci Number 3</string>
 				<key>explanation</key>
@@ -189,7 +204,7 @@
 			</dict>
 			<dict>
 				<key>algId</key>
-				<integer>5</integer>
+				<integer>6</integer>
 				<key>name</key>
 				<string>n*n Matrix Multiplication</string>
 				<key>explanation</key>

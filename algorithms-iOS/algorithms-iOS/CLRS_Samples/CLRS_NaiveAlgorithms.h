@@ -13,5 +13,12 @@ void doInsertionSort(unsigned int numberOfElements);
 
 void doBubbleSort(unsigned int numberOfElements);
 
+void doFibonacci_1(unsigned int index);
+
+void doFibonacci_2(unsigned int index);
+
+void doFibonacci_3(unsigned int index);
+
+void doMatrixMultiplication(void);
 
 #endif
