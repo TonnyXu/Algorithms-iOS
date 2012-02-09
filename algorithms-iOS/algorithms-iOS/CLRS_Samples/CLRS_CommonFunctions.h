@@ -9,9 +9,13 @@
 #ifndef algorithms_iOS_common_functions_h
 #define algorithms_iOS_common_functions_h
 
-void generateInt32Array(int* , unsigned int numOfElements, int minValue, int maxValue);
+void generateInt32Array(int array[], unsigned int numOfElements, int minValue, int maxValue);
+void generateSortedInt32Array(int array[], unsigned int numOfElements, int minValue, int maxValue);
+void generateReverseSortedInt32Array(int array[], unsigned int numOfElements, int minValue, int maxValue);
+void generateGroupedInt32Array(int array[], unsigned int numOfElements, unsigned int numOfGroups, int minValue, int maxValue);
 
 void xorSwap (int *x, int *y);
+void swap(int *x, int *y);
 
 #if !defined(MIN)
 #define MIN(A,B)	({ __typeof__(A) __a = (A); __typeof__(B) __b = (B); __a < __b ? __a : __b; })

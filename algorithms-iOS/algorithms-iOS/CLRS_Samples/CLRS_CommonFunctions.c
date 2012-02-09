@@ -25,6 +25,42 @@ void generateInt32Array(int outArray[], unsigned int numOfElements, int minValue
   
 }
 
+void generateSortedInt32Array(int outArray[], unsigned int numOfElements, int minValue, int maxValue)
+{
+  assert(maxValue > minValue);
+  assert(numOfElements <= INT_MAX);
+  
+  for (int i = 0; i < numOfElements; i++) {
+    outArray[i] = i;
+  }
+  
+}
+
+void generateReverseSortedInt32Array(int outArray[], unsigned int numOfElements, int minValue, int maxValue)
+{
+  assert(maxValue > minValue);
+  assert(numOfElements <= INT_MAX);
+  
+  for (int i = 0; i < numOfElements; i++) {
+    int value = minValue + arc4random() % (maxValue - minValue);
+    outArray[numOfElements - i - 1] = value;
+  }
+  
+}
+
+void generateGroupedInt32Array(int outArray[], unsigned int numOfElements, unsigned int numOfGroups, int minValue, int maxValue)
+{
+  assert(maxValue > minValue);
+  assert(numOfElements <= INT_MAX);
+  assert(numOfGroups < numOfElements);
+  
+  for (int i = 0; i < numOfElements; i++) {
+    int value = minValue + arc4random() % (maxValue - minValue);
+    outArray[i] = value;
+  }
+  
+}
+
 void xorSwap (int *x, int *y) 
 {
   if (x != y) {
@@ -32,4 +68,10 @@ void xorSwap (int *x, int *y)
     *y ^= *x;
     *x ^= *y;
   }
+}
+
+void swap(int *x, int *y){
+  int temp = *x;
+  *x = *y;
+  *y = temp;
 }

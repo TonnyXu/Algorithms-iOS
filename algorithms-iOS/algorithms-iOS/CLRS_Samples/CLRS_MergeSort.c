@@ -14,8 +14,8 @@
 #import "CLRS_CommonFunctions.h"
 #import "CLRS_DivideAndConquer.h"
 
-void mergeSort(int *, int startIndex, int endIndex);
-void merge(int *, int startIndex, int middleIndex, int endIndex);
+void mergeSort(int array[], int startIndex, int endIndex);
+void merge(int array[], int startIndex, int middleIndex, int endIndex);
 
 #ifndef TONNY_IOS_APP
 int main(void){

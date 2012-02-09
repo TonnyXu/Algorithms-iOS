@@ -23,7 +23,7 @@
 		CE5D695D14DF65B0001123DF /* CLRS_HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */; };
 		CE5D695F14DF65C0001123DF /* CLRS_QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */; };
 		CE5D696114DF66CE001123DF /* CLRS_CountingSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */; };
-		CE5D696314DF66FC001123DF /* CLRS_StubleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696214DF66FC001123DF /* CLRS_StubleSort.c */; };
+		CE5D696314DF66FC001123DF /* CLRS_ShellSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696214DF66FC001123DF /* CLRS_ShellSort.c */; };
 		CE5D696514DF6758001123DF /* CLRS_RadixSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696414DF6758001123DF /* CLRS_RadixSort.c */; };
 		CE85361A14D0014600BD56C4 /* algorithms_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E15BABDD14BD4CE100BB9B65 /* algorithms_iOS.xcdatamodeld */; };
 		CE85363014D00AEC00BD56C4 /* TXMainThreadMOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */; };
@@ -93,8 +93,9 @@
 		CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_HeapSort.c; path = CLRS_Samples/CLRS_HeapSort.c; sourceTree = "<group>"; };
 		CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_QuickSort.c; path = CLRS_Samples/CLRS_QuickSort.c; sourceTree = "<group>"; };
 		CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_CountingSort.c; path = CLRS_Samples/CLRS_CountingSort.c; sourceTree = "<group>"; };
-		CE5D696214DF66FC001123DF /* CLRS_StubleSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_StubleSort.c; path = CLRS_Samples/CLRS_StubleSort.c; sourceTree = "<group>"; };
+		CE5D696214DF66FC001123DF /* CLRS_ShellSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_ShellSort.c; path = CLRS_Samples/CLRS_ShellSort.c; sourceTree = "<group>"; };
 		CE5D696414DF6758001123DF /* CLRS_RadixSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_RadixSort.c; path = CLRS_Samples/CLRS_RadixSort.c; sourceTree = "<group>"; };
+		CE5D696714E3FB48001123DF /* CLRS_DataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLRS_DataStructures.h; path = CLRS_Samples/CLRS_DataStructures.h; sourceTree = "<group>"; };
 		CE85362C14D00AEC00BD56C4 /* TXMainThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMainThreadMOC.h; sourceTree = "<group>"; };
 		CE85362D14D00AEC00BD56C4 /* TXMainThreadMOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMainThreadMOC.m; sourceTree = "<group>"; };
 		CE85362E14D00AEC00BD56C4 /* TXSubThreadMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXSubThreadMOC.h; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 				CE4F132B14DA52EC003A8788 /* makefile */,
 				CE4F132914DA49CA003A8788 /* CLRS_CommonFunctions.h */,
 				CE4F132814DA49CA003A8788 /* CLRS_CommonFunctions.c */,
+				CE5D696614E3FB26001123DF /* Data Structures */,
 				CE4F131B14D92AEF003A8788 /* Divide & Conquer */,
 				CE4F131A14D92AE7003A8788 /* Naive Algorithms */,
 			);
@@ -212,7 +214,6 @@
 			children = (
 				CE5D695B14DF6569001123DF /* Sort */,
 				CEF8D79C14DAB365008B03A1 /* CLRS_DivideAndConquer.h */,
-				CEF8D79D14DAB37C008B03A1 /* CLRS_MergeSort.c */,
 				CE5D695114DF6239001123DF /* CLRS_Fibonacci_4.c */,
 				CE5D695314DF6282001123DF /* CLRS_PowerToN.c */,
 				CE5D695514DF6408001123DF /* CLRS_Stranssen.c */,
@@ -224,13 +225,22 @@
 		CE5D695B14DF6569001123DF /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				CEF8D79D14DAB37C008B03A1 /* CLRS_MergeSort.c */,
 				CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */,
+				CE5D696214DF66FC001123DF /* CLRS_ShellSort.c */,
 				CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */,
 				CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */,
-				CE5D696214DF66FC001123DF /* CLRS_StubleSort.c */,
 				CE5D696414DF6758001123DF /* CLRS_RadixSort.c */,
 			);
 			name = Sort;
+			sourceTree = "<group>";
+		};
+		CE5D696614E3FB26001123DF /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D696714E3FB48001123DF /* CLRS_DataStructures.h */,
+			);
+			name = "Data Structures";
 			sourceTree = "<group>";
 		};
 		CE85362B14D00AB900BD56C4 /* Core Data Helper Class */ = {
@@ -502,7 +512,7 @@
 				CE5D695D14DF65B0001123DF /* CLRS_HeapSort.c in Sources */,
 				CE5D695F14DF65C0001123DF /* CLRS_QuickSort.c in Sources */,
 				CE5D696114DF66CE001123DF /* CLRS_CountingSort.c in Sources */,
-				CE5D696314DF66FC001123DF /* CLRS_StubleSort.c in Sources */,
+				CE5D696314DF66FC001123DF /* CLRS_ShellSort.c in Sources */,
 				CE5D696514DF6758001123DF /* CLRS_RadixSort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
