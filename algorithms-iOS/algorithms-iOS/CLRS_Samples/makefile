@@ -13,9 +13,13 @@ mergeSort: clean commonFunctions CLRS_DivideAndConquer.h CLRS_mergeSort.c
 	gcc -c -std=c99 CLRS_MergeSort.c -o CLRS_MergeSort.o
 	gcc CLRS_CommonFunctions.o CLRS_MergeSort.o -o CLRS
 
-quicksort: clean commonFunctions CLRS_DivideAndConquer.h CLRS_QuickSort.c
-	gcc -c -std=c99 CLRS_QuickSort.c -o CLRS_QuickSort.o
-	gcc CLRS_CommonFunctions.o CLRS_QuickSort.o -o CLRS
+quicksort: clean commonFunctions CLRS_DivideAndConquer.h CLRS_Quicksort.c
+	gcc -c -std=c99 CLRS_Quicksort.c -o CLRS_Quicksort.o
+	gcc CLRS_CommonFunctions.o CLRS_Quicksort.o -o CLRS
+
+heapsort: clean commonFunctions CLRS_DivideAndConquer.h CLRS_Heapsort.c
+	gcc -c -std=c99 CLRS_Heapsort.c -o CLRS_Heapsort.o
+	gcc CLRS_CommonFunctions.o CLRS_Heapsort.o -o CLRS
 
 clean: 
 	rm -rf *o CLRS

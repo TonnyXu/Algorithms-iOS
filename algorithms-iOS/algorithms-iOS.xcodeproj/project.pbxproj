@@ -20,8 +20,8 @@
 		CE5D695614DF6408001123DF /* CLRS_Stranssen.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695514DF6408001123DF /* CLRS_Stranssen.c */; };
 		CE5D695814DF642E001123DF /* CLRS_MatrxMultiplication.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */; };
 		CE5D695A14DF64F2001123DF /* CLRS_BinarySearch.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695914DF64F2001123DF /* CLRS_BinarySearch.c */; };
-		CE5D695D14DF65B0001123DF /* CLRS_HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */; };
-		CE5D695F14DF65C0001123DF /* CLRS_QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */; };
+		CE5D695D14DF65B0001123DF /* CLRS_Heapsort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695C14DF65AF001123DF /* CLRS_Heapsort.c */; };
+		CE5D695F14DF65C0001123DF /* CLRS_Quicksort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695E14DF65C0001123DF /* CLRS_Quicksort.c */; };
 		CE5D696114DF66CE001123DF /* CLRS_CountingSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */; };
 		CE5D696314DF66FC001123DF /* CLRS_ShellSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696214DF66FC001123DF /* CLRS_ShellSort.c */; };
 		CE5D696514DF6758001123DF /* CLRS_RadixSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D696414DF6758001123DF /* CLRS_RadixSort.c */; };
@@ -90,8 +90,8 @@
 		CE5D695514DF6408001123DF /* CLRS_Stranssen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Stranssen.c; path = CLRS_Samples/CLRS_Stranssen.c; sourceTree = "<group>"; };
 		CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_MatrxMultiplication.c; path = CLRS_Samples/CLRS_MatrxMultiplication.c; sourceTree = "<group>"; };
 		CE5D695914DF64F2001123DF /* CLRS_BinarySearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_BinarySearch.c; path = CLRS_Samples/CLRS_BinarySearch.c; sourceTree = "<group>"; };
-		CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_HeapSort.c; path = CLRS_Samples/CLRS_HeapSort.c; sourceTree = "<group>"; };
-		CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_QuickSort.c; path = CLRS_Samples/CLRS_QuickSort.c; sourceTree = "<group>"; };
+		CE5D695C14DF65AF001123DF /* CLRS_Heapsort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Heapsort.c; path = CLRS_Samples/CLRS_Heapsort.c; sourceTree = "<group>"; };
+		CE5D695E14DF65C0001123DF /* CLRS_Quicksort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Quicksort.c; path = CLRS_Samples/CLRS_Quicksort.c; sourceTree = "<group>"; };
 		CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_CountingSort.c; path = CLRS_Samples/CLRS_CountingSort.c; sourceTree = "<group>"; };
 		CE5D696214DF66FC001123DF /* CLRS_ShellSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_ShellSort.c; path = CLRS_Samples/CLRS_ShellSort.c; sourceTree = "<group>"; };
 		CE5D696414DF6758001123DF /* CLRS_RadixSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_RadixSort.c; path = CLRS_Samples/CLRS_RadixSort.c; sourceTree = "<group>"; };
@@ -226,9 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				CEF8D79D14DAB37C008B03A1 /* CLRS_MergeSort.c */,
-				CE5D695C14DF65AF001123DF /* CLRS_HeapSort.c */,
+				CE5D695C14DF65AF001123DF /* CLRS_Heapsort.c */,
 				CE5D696214DF66FC001123DF /* CLRS_ShellSort.c */,
-				CE5D695E14DF65C0001123DF /* CLRS_QuickSort.c */,
+				CE5D695E14DF65C0001123DF /* CLRS_Quicksort.c */,
 				CE5D696014DF66CE001123DF /* CLRS_CountingSort.c */,
 				CE5D696414DF6758001123DF /* CLRS_RadixSort.c */,
 			);
@@ -509,8 +509,8 @@
 				CE5D695614DF6408001123DF /* CLRS_Stranssen.c in Sources */,
 				CE5D695814DF642E001123DF /* CLRS_MatrxMultiplication.c in Sources */,
 				CE5D695A14DF64F2001123DF /* CLRS_BinarySearch.c in Sources */,
-				CE5D695D14DF65B0001123DF /* CLRS_HeapSort.c in Sources */,
-				CE5D695F14DF65C0001123DF /* CLRS_QuickSort.c in Sources */,
+				CE5D695D14DF65B0001123DF /* CLRS_Heapsort.c in Sources */,
+				CE5D695F14DF65C0001123DF /* CLRS_Quicksort.c in Sources */,
 				CE5D696114DF66CE001123DF /* CLRS_CountingSort.c in Sources */,
 				CE5D696314DF66FC001123DF /* CLRS_ShellSort.c in Sources */,
 				CE5D696514DF6758001123DF /* CLRS_RadixSort.c in Sources */,

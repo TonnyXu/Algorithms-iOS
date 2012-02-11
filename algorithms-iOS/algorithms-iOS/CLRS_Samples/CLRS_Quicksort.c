@@ -15,18 +15,18 @@
 #import "CLRS_CommonFunctions.h"
 #import "CLRS_DivideAndConquer.h"
 
-void quickSort(int array[], unsigned int startIndex, unsigned int endIndex);
+void quicksort(int array[], unsigned int startIndex, unsigned int endIndex);
 unsigned int partition(int array[], unsigned int startIndex, unsigned int pivotIndex, unsigned int endIndex);
 
 #ifndef TONNY_IOS_APP
 int main(void){
   
-  doQuickSort(100000);
+  doQuicksort(100000);
   return 0;
 }
 #endif
 
-void doQuickSort(unsigned int numberOfElements){
+void doQuicksort(unsigned int numberOfElements){
   const char* algorithmName = "Quick Sort";
   printf("[%s] sort %d elements.\n", algorithmName, numberOfElements);
   int array[numberOfElements];
@@ -42,8 +42,7 @@ void doQuickSort(unsigned int numberOfElements){
   struct timeval start;
   gettimeofday(&start, NULL);
   
-//  mergeSort(array, 0, numberOfElements -1);
-  quickSort(array, 0, numberOfElements -1);
+  quicksort(array, 0, numberOfElements -1);
   
   struct timeval ended;
   gettimeofday(&ended, NULL);
@@ -60,7 +59,7 @@ void doQuickSort(unsigned int numberOfElements){
 }
 
 
-void quickSort(int array[], unsigned int startIndex, unsigned int endIndex){
+void quicksort(int array[], unsigned int startIndex, unsigned int endIndex){
   // only one element, no need to sort.
   if (startIndex >= endIndex) return;
   
@@ -68,8 +67,8 @@ void quickSort(int array[], unsigned int startIndex, unsigned int endIndex){
   unsigned int pivotIndex = (arc4random() % (endIndex - startIndex)) + startIndex;
 
   int pivotIndexAfterPartition = partition(array, startIndex, pivotIndex, endIndex);
-  quickSort(array, startIndex, pivotIndexAfterPartition - 1);
-  quickSort(array, pivotIndex + 1, endIndex);
+  quicksort(array, startIndex, pivotIndexAfterPartition - 1);
+  quicksort(array, pivotIndex + 1, endIndex);
   
 }
 
