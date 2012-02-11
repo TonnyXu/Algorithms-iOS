@@ -13,11 +13,14 @@ void doInsertionSort(unsigned int numberOfElements);
 
 void doBubbleSort(unsigned int numberOfElements);
 
-void doFibonacci_1(unsigned int index);
+// using recursino
+void doFibonacci_recursion(unsigned int index);
 
-void doFibonacci_2(unsigned int index);
+// using fomula
+void doFibonacci_fomula(unsigned int index);
 
-void doFibonacci_3(unsigned int index);
+// using table
+void doFibonacci_table(unsigned int index);
 
 void doMatrixMultiplication(void);
 

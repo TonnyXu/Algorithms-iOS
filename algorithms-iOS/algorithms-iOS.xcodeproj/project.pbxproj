@@ -12,10 +12,10 @@
 		CE4F132714DA49C0003A8788 /* CLRS_InsertionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4F132514DA49C0003A8788 /* CLRS_InsertionSort.c */; };
 		CE4F132A14DA49CB003A8788 /* CLRS_CommonFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4F132814DA49CA003A8788 /* CLRS_CommonFunctions.c */; };
 		CE5360BC14D59AE20002E553 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5360BB14D59AE20002E553 /* Category.m */; };
-		CE5D694B14DF6205001123DF /* CLRS_Fibonacci_1.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694A14DF6205001123DF /* CLRS_Fibonacci_1.c */; };
-		CE5D694E14DF621A001123DF /* CLRS_Fibonacci_2.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694D14DF621A001123DF /* CLRS_Fibonacci_2.c */; };
-		CE5D695014DF622A001123DF /* CLRS_Fibonacci_3.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694F14DF6229001123DF /* CLRS_Fibonacci_3.c */; };
-		CE5D695214DF6239001123DF /* CLRS_Fibonacci_4.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695114DF6239001123DF /* CLRS_Fibonacci_4.c */; };
+		CE5D694B14DF6205001123DF /* CLRS_Fibonacci_recursion.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694A14DF6205001123DF /* CLRS_Fibonacci_recursion.c */; };
+		CE5D694E14DF621A001123DF /* CLRS_Fibonacci_fomula.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694D14DF621A001123DF /* CLRS_Fibonacci_fomula.c */; };
+		CE5D695014DF622A001123DF /* CLRS_Fibonacci_table.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D694F14DF6229001123DF /* CLRS_Fibonacci_table.c */; };
+		CE5D695214DF6239001123DF /* CLRS_Fibonacci_matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695114DF6239001123DF /* CLRS_Fibonacci_matrix.c */; };
 		CE5D695414DF6282001123DF /* CLRS_PowerToN.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695314DF6282001123DF /* CLRS_PowerToN.c */; };
 		CE5D695614DF6408001123DF /* CLRS_Stranssen.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695514DF6408001123DF /* CLRS_Stranssen.c */; };
 		CE5D695814DF642E001123DF /* CLRS_MatrxMultiplication.c in Sources */ = {isa = PBXBuildFile; fileRef = CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */; };
@@ -82,10 +82,10 @@
 		CE4F132B14DA52EC003A8788 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = makefile; path = CLRS_Samples/makefile; sourceTree = "<group>"; };
 		CE5360BA14D59AE20002E553 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = ModelClasses/Category.h; sourceTree = "<group>"; };
 		CE5360BB14D59AE20002E553 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = ModelClasses/Category.m; sourceTree = "<group>"; };
-		CE5D694A14DF6205001123DF /* CLRS_Fibonacci_1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_1.c; path = CLRS_Samples/CLRS_Fibonacci_1.c; sourceTree = "<group>"; };
-		CE5D694D14DF621A001123DF /* CLRS_Fibonacci_2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_2.c; path = CLRS_Samples/CLRS_Fibonacci_2.c; sourceTree = "<group>"; };
-		CE5D694F14DF6229001123DF /* CLRS_Fibonacci_3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_3.c; path = CLRS_Samples/CLRS_Fibonacci_3.c; sourceTree = "<group>"; };
-		CE5D695114DF6239001123DF /* CLRS_Fibonacci_4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_4.c; path = CLRS_Samples/CLRS_Fibonacci_4.c; sourceTree = "<group>"; };
+		CE5D694A14DF6205001123DF /* CLRS_Fibonacci_recursion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_recursion.c; path = CLRS_Samples/CLRS_Fibonacci_recursion.c; sourceTree = "<group>"; };
+		CE5D694D14DF621A001123DF /* CLRS_Fibonacci_fomula.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_fomula.c; path = CLRS_Samples/CLRS_Fibonacci_fomula.c; sourceTree = "<group>"; };
+		CE5D694F14DF6229001123DF /* CLRS_Fibonacci_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_table.c; path = CLRS_Samples/CLRS_Fibonacci_table.c; sourceTree = "<group>"; };
+		CE5D695114DF6239001123DF /* CLRS_Fibonacci_matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Fibonacci_matrix.c; path = CLRS_Samples/CLRS_Fibonacci_matrix.c; sourceTree = "<group>"; };
 		CE5D695314DF6282001123DF /* CLRS_PowerToN.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_PowerToN.c; path = CLRS_Samples/CLRS_PowerToN.c; sourceTree = "<group>"; };
 		CE5D695514DF6408001123DF /* CLRS_Stranssen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_Stranssen.c; path = CLRS_Samples/CLRS_Stranssen.c; sourceTree = "<group>"; };
 		CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CLRS_MatrxMultiplication.c; path = CLRS_Samples/CLRS_MatrxMultiplication.c; sourceTree = "<group>"; };
@@ -201,9 +201,9 @@
 				CE4F132614DA49C0003A8788 /* CLRS_NaiveAlgorithms.h */,
 				CE4F132514DA49C0003A8788 /* CLRS_InsertionSort.c */,
 				CEF8D79F14DAB3FB008B03A1 /* CLRS_BubbleSort.c */,
-				CE5D694A14DF6205001123DF /* CLRS_Fibonacci_1.c */,
-				CE5D694D14DF621A001123DF /* CLRS_Fibonacci_2.c */,
-				CE5D694F14DF6229001123DF /* CLRS_Fibonacci_3.c */,
+				CE5D694A14DF6205001123DF /* CLRS_Fibonacci_recursion.c */,
+				CE5D694D14DF621A001123DF /* CLRS_Fibonacci_fomula.c */,
+				CE5D694F14DF6229001123DF /* CLRS_Fibonacci_table.c */,
 				CE5D695714DF642E001123DF /* CLRS_MatrxMultiplication.c */,
 			);
 			name = "Naive Algorithms";
@@ -214,7 +214,7 @@
 			children = (
 				CE5D695B14DF6569001123DF /* Sort */,
 				CEF8D79C14DAB365008B03A1 /* CLRS_DivideAndConquer.h */,
-				CE5D695114DF6239001123DF /* CLRS_Fibonacci_4.c */,
+				CE5D695114DF6239001123DF /* CLRS_Fibonacci_matrix.c */,
 				CE5D695314DF6282001123DF /* CLRS_PowerToN.c */,
 				CE5D695514DF6408001123DF /* CLRS_Stranssen.c */,
 				CE5D695914DF64F2001123DF /* CLRS_BinarySearch.c */,
@@ -501,10 +501,10 @@
 				CE4F132A14DA49CB003A8788 /* CLRS_CommonFunctions.c in Sources */,
 				CEF8D79E14DAB37C008B03A1 /* CLRS_MergeSort.c in Sources */,
 				CEF8D7A014DAB3FB008B03A1 /* CLRS_BubbleSort.c in Sources */,
-				CE5D694B14DF6205001123DF /* CLRS_Fibonacci_1.c in Sources */,
-				CE5D694E14DF621A001123DF /* CLRS_Fibonacci_2.c in Sources */,
-				CE5D695014DF622A001123DF /* CLRS_Fibonacci_3.c in Sources */,
-				CE5D695214DF6239001123DF /* CLRS_Fibonacci_4.c in Sources */,
+				CE5D694B14DF6205001123DF /* CLRS_Fibonacci_recursion.c in Sources */,
+				CE5D694E14DF621A001123DF /* CLRS_Fibonacci_fomula.c in Sources */,
+				CE5D695014DF622A001123DF /* CLRS_Fibonacci_table.c in Sources */,
+				CE5D695214DF6239001123DF /* CLRS_Fibonacci_matrix.c in Sources */,
 				CE5D695414DF6282001123DF /* CLRS_PowerToN.c in Sources */,
 				CE5D695614DF6408001123DF /* CLRS_Stranssen.c in Sources */,
 				CE5D695814DF642E001123DF /* CLRS_MatrxMultiplication.c in Sources */,

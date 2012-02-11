@@ -16,7 +16,7 @@ void doCountingSort(unsigned int numberOfElements);
 void doShellSort(unsigned int numberOfElements);
 void doRadixSort(unsigned int numberOfElements);
 
-void doFibonacci4(unsigned int index);
+void doFibonacci_matrix(unsigned int index);
 
 void doPowerToN(int x, int exponential);
 
