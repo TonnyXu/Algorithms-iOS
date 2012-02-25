@@ -17,7 +17,7 @@
 #import "CLRS_CommonFunctions.h"
 #import "CLRS_DivideAndConquer.h"
 
-unsigned int calculateFibonacciAtIndex(unsigned int index);
+unsigned int calculateFibonacciAtIndexByMatrix(unsigned int index);
 
 #ifndef TONNY_IOS_APP
 int main(int args, char* arg_v[]){
@@ -61,17 +61,17 @@ void doFibonacci_matrix(unsigned int index){
   struct timeval start;
   gettimeofday(&start, NULL);
   
-  calculateFibonacciAtIndex(index);
+  calculateFibonacciAtIndexByMatrix(index);
   
   struct timeval ended;
   gettimeofday(&ended, NULL);
   struct timeval sub;
   timersub(&ended, &start, &sub);
-  printf("[%s] Using %ld.%d seconds.\n", algorithmName, sub.tv_sec, sub.tv_usec);
+  printf("[%s] Using %ld.%06d seconds.\n", algorithmName, sub.tv_sec, sub.tv_usec);
 }
 
 
-unsigned int calculateFibonacciAtIndex(unsigned int index){
+unsigned int calculateFibonacciAtIndexByMatrix(unsigned int index){
   assert(index <= 47);
   /* Fibnacci number to 15
    * 0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14,  15
@@ -79,5 +79,5 @@ unsigned int calculateFibonacciAtIndex(unsigned int index){
    * 0   1   1   2   3   5   8  13  21  34   55   89  144  233  377  610
    */
   
-
+  return 0;
 }

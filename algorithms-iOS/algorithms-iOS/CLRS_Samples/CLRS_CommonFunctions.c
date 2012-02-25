@@ -25,25 +25,22 @@ void generateInt32Array(int outArray[], unsigned int numOfElements, int minValue
   
 }
 
-void generateSortedInt32Array(int outArray[], unsigned int numOfElements, int minValue, int maxValue)
+void generateSortedInt32Array(int outArray[], unsigned int numOfElements, int minValue)
 {
-  assert(maxValue > minValue);
   assert(numOfElements <= INT_MAX);
   
   for (int i = 0; i < numOfElements; i++) {
-    outArray[i] = i;
+    outArray[i] = i + minValue;
   }
   
 }
 
-void generateReverseSortedInt32Array(int outArray[], unsigned int numOfElements, int minValue, int maxValue)
+void generateReverseSortedInt32Array(int outArray[], unsigned int numOfElements, int minValue)
 {
-  assert(maxValue > minValue);
   assert(numOfElements <= INT_MAX);
   
-  for (int i = 0; i < numOfElements; i++) {
-    int value = minValue + arc4random() % (maxValue - minValue);
-    outArray[numOfElements - i - 1] = value;
+  for (int i = numOfElements -1 ; i >= 0; i--) {
+    outArray[i] = i + minValue;
   }
   
 }
@@ -75,3 +72,4 @@ void swap(int *x, int *y){
   *x = *y;
   *y = temp;
 }
+

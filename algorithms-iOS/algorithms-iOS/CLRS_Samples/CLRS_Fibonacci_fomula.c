@@ -16,7 +16,7 @@
 #import "CLRS_CommonFunctions.h"
 #import "CLRS_NaiveAlgorithms.h"
 
-double calculateFibonacciAtIndex(unsigned int index);
+double calculateFibonacciAtIndexByFomula(unsigned int index);
 
 #ifndef TONNY_IOS_APP
 int main(int args, char* arg_v[]){
@@ -46,18 +46,18 @@ void doFibonacci_fomula(unsigned int index){
   struct timeval start;
   gettimeofday(&start, NULL);
   
-  double result = calculateFibonacciAtIndex(index);
+  double result = calculateFibonacciAtIndexByFomula(index);
   printf("%.0f\n", result);
   
   struct timeval ended;
   gettimeofday(&ended, NULL);
   struct timeval sub;
   timersub(&ended, &start, &sub);
-  printf("[%s] Using %ld.%d seconds.\n", algorithmName, sub.tv_sec, sub.tv_usec);
+  printf("[%s] Using %ld.%06d seconds.\n", algorithmName, sub.tv_sec, sub.tv_usec);
 }
 
 
-double calculateFibonacciAtIndex(unsigned int index){
+double calculateFibonacciAtIndexByFomula(unsigned int index){
   /* Fibnacci number to 15
    * 0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14,  15
    *--------------------------------------------------------------------------- 

@@ -16,12 +16,15 @@ void doBubbleSort(unsigned int numberOfElements);
 // using recursino
 void doFibonacci_recursion(unsigned int index);
 
+// using recursino
+void doFibonacci_loop(unsigned int index);
+
 // using fomula
 void doFibonacci_fomula(unsigned int index);
 
 // using table
 void doFibonacci_table(unsigned int index);
 
-void doMatrixMultiplication(void);
+void doMatrixMultiplication(unsigned char matrixSize);
 
 #endif

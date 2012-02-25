@@ -48,7 +48,7 @@ void doQuicksort(unsigned int numberOfElements){
   gettimeofday(&ended, NULL);
   struct timeval sub;
   timersub(&ended, &start, &sub);
-  printf("[%s] Using %ld.%d seconds.\n", algorithmName, sub.tv_sec, sub.tv_usec);
+  printf("[%s] Using %ld.%06d seconds.\n", algorithmName, sub.tv_sec, sub.tv_usec);
   
   for (int i = 0; i < minNumOfElements; i++) {
     printf("%d, ", array[i]);

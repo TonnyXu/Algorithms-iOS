@@ -10,8 +10,8 @@
 #define algorithms_iOS_common_functions_h
 
 void generateInt32Array(int array[], unsigned int numOfElements, int minValue, int maxValue);
-void generateSortedInt32Array(int array[], unsigned int numOfElements, int minValue, int maxValue);
-void generateReverseSortedInt32Array(int array[], unsigned int numOfElements, int minValue, int maxValue);
+void generateSortedInt32Array(int array[], unsigned int numOfElements, int minValue);
+void generateReverseSortedInt32Array(int array[], unsigned int numOfElements, int minValue);
 void generateGroupedInt32Array(int array[], unsigned int numOfElements, unsigned int numOfGroups, int minValue, int maxValue);
 
 void xorSwap (int *x, int *y);

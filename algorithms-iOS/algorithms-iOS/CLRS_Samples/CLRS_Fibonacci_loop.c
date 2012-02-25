@@ -1,8 +1,8 @@
 //
-//  CLRS_Fibonacci_3.c
+//  CLRS_Fibonaci_loop.c
 //  algorithms-iOS
 //
-//  Created by Tonny Xu on 2/6/12.
+//  Created by Tonny Xu on 2/21/12.
 //  Copyright (c) 2012 Tonny Xu. All rights reserved.
 //
 
@@ -12,15 +12,15 @@
 #include <math.h>
 #include <stdlib.h>
 #include <inttypes.h>
-
+#include <assert.h>
 
 #import "CLRS_CommonFunctions.h"
 #import "CLRS_NaiveAlgorithms.h"
 
-void calculateFibonacciAtIndexByTable(unsigned int array[], unsigned int index);
+unsigned int calculateFibonacciAtIndexByLoop(unsigned int index);
 
 #ifndef TONNY_IOS_APP
-int main(int args, char* arg_v[]){
+int main(int args, char * arg_v[]){
   
   if (args != 2) {
     printf("Usage: ./CLRS index_of_fibonacci\n");
@@ -33,7 +33,7 @@ int main(int args, char* arg_v[]){
     printf("       index_of_fibonacci need to be a number.[%s]\n", endptr);
     return 0;
   }
-
+  
 #if defined(__LP64__) || defined(_WIN64)
   // LP64 machine, OS X or Linux
   if (index > 93) {
@@ -47,28 +47,22 @@ int main(int args, char* arg_v[]){
     return 0;
   }
 #endif
-
-  doFibonacci_table(index);
+  
+  doFibonacci_loop(index);
   return 0;
 }
 #endif
 
 
-void doFibonacci_table(unsigned int index){
-  const char* algorithmName = "Fibonacci(table)";
+void doFibonacci_loop(unsigned int index){
+  const char* algorithmName = "Fibonacci(Loop)";
   printf("[%s] calculate fibonacci number at [%d] = ", algorithmName, index);
   
   struct timeval start;
   gettimeofday(&start, NULL);
-
-  if (index == 0) {
-    printf("0\n");
-  }else{
-    unsigned int array[index + 1];
-    calculateFibonacciAtIndexByTable(array, index);
-    //TODO: need to be care of (unsigned/singed)int32/int64
-    printf("%u\n", array[index]);
-  }
+  
+  unsigned int result = calculateFibonacciAtIndexByLoop(index);
+  printf("%d\n", result);
   
   struct timeval ended;
   gettimeofday(&ended, NULL);
@@ -78,19 +72,29 @@ void doFibonacci_table(unsigned int index){
 }
 
 
-void calculateFibonacciAtIndexByTable(unsigned int array[], unsigned int index){
+unsigned int calculateFibonacciAtIndexByLoop(unsigned int index){
   /* Fibnacci number to 15
    * 0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14,  15
    *--------------------------------------------------------------------------- 
    * 0   1   1   2   3   5   8  13  21  34   55   89  144  233  377  610
    */
   
-  array[0] = 0;
-  array[1] = 1;
-  array[2] = 1;
-  if (index > 2) {
-    for (int i = 3; i <= index; i++) {
-      array[i] = array[i-1] + array[i - 2];
-    }
+  int fibValue = 0;
+  if (index == 0) {
+    fibValue = 0;
+    return fibValue;
+  }else if (index == 1 || index == 2){
+    fibValue = 1;
+    return fibValue;
   }
+  
+  // index > 2
+  int a = 1;
+  int b = 1;
+  for (int n = 3; n <= index; n++) {
+    fibValue = a + b;
+    a = b;
+    b = fibValue;
+  }
+  return fibValue;
 }
