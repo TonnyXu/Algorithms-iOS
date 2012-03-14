@@ -23,8 +23,6 @@ typedef struct ListElement_{
 typedef struct List_{
   int                      size;
 
-  //void                    (*destroy)(void *data);
-
   struct ListElement_     *head;
   struct ListElement_     *tail;
 
@@ -58,12 +56,16 @@ typedef List            Stack;
 /******************************************************************************
  * Stack methods
  *****************************************************************************/
-void init_stack(Stack *stack);
-
+Stack* new_empty_stack();
 void destroy_stack(Stack *stack);
 
-int stack_pop(Stack *stack, StackElement *element);
+StackElement *create_stack_element(const void *data);
+void destroy_a_stack_element(StackElement *element);
 
-int stack_push(Stack *stack, StackElement *element);
+void print_stack(Stack *stack);
+
+int stack_pop(Stack *stack, StackElement *element);
+int stack_push_element(Stack *stack, StackElement *element);
+int stack_push_data(Stack *stack, const void *data);
 
 #endif
