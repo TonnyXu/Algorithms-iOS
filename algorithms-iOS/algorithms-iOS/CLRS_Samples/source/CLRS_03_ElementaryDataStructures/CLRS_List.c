@@ -10,13 +10,17 @@
 
 #include "CLRS_DataStructures.h"
 
-void init_list(List *list){
+List* new_empty_list(){
+  List *newList = (List *)malloc(sizeof(List));
+  if (newList == NULL) return NULL;
 
-  list->size = 0;
-  list->head = NULL;
-  list->tail = NULL;
+  newList->size = 0;
+  newList->head = NULL;
+  newList->tail = NULL;
 
+  return newList;
 }
+
 ListElement *create_an_element(const void *data){
   ListElement *newElement;
 
@@ -198,16 +202,16 @@ void print_list(List *list){
     return;
   }
 
-  fprintf(stdout, "List at     : %p\n", &list);
+  fprintf(stdout, "List at     : %p\n", list);
   fprintf(stdout, "Size        : %d\n", list->size);
-  fprintf(stdout, "Head at     : %p\n", &list->head);
-  fprintf(stdout, "Tail at     : %p\n", &list->tail);
-  fprintf(stdout, "---------------------------------\n");
+  fprintf(stdout, "Head at     : %p\n", list->head);
+  fprintf(stdout, "Tail at     : %p\n", list->tail);
+  fprintf(stdout, "-------------\n");
 
   ListElement *currentElement = list->head;
   int i = 0;
   while (currentElement != NULL){
-    fprintf(stdout, "Elmt[%2d]  : [%p]%d\n", i, &currentElement, *(int *)currentElement->data);
+    fprintf(stdout, "Elmt[%2d]  : [%p]%d\n", i, currentElement, *(int *)currentElement->data);
     currentElement = currentElement->next;
     i++;
   }

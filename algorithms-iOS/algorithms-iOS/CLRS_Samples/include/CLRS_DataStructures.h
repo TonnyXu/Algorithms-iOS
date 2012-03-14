@@ -33,7 +33,7 @@ typedef struct List_{
 /******************************************************************************
  * List methods
  *****************************************************************************/
-void init_list(List *list);
+List* new_empty_list();
 ListElement *create_an_element(const void *data);
 
 void destroy_list(List *list);
