@@ -12,6 +12,13 @@ stack_test: clean list stack CLRS_Stack.c
 	clang -c -I../../include/ -std=c99 CLRS_Stack_Test.c -o CLRS_Stack_Test.o
 	clang CLRS_List.o CLRS_Stack.o CLRS_Stack_Test.o -o CLRS
 
+queue: clean list CLRS_Queue.c 
+	clang -c -I../../include/ -std=c99 CLRS_Queue.c -o CLRS_Queue.o
+
+queue_test: clean list queue CLRS_Queue.c
+	clang -c -I../../include/ -std=c99 CLRS_Queue_Test.c -o CLRS_Queue_Test.o
+	clang CLRS_List.o CLRS_Queue.o CLRS_Queue_Test.o -o CLRS
+
 clean: 
 	rm -rf *.o CLRS
 

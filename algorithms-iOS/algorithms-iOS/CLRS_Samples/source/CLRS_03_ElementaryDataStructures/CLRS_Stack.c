@@ -1,5 +1,5 @@
 /*
- * Stack.c
+ * CLRS_Stack.c
  *
  * Implement all the necessary methods for a stack.
  */

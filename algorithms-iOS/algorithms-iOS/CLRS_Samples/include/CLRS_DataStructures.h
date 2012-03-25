@@ -75,4 +75,22 @@ void stack_print(Stack *stack);
 int stack_pop(Stack *stack, void **data);
 int stack_push_data(Stack *stack, const void *data);
 
+/******************************************************************************
+ * Queue definition
+ *****************************************************************************/
+typedef ListElement     QueueElement;
+typedef List            Queue;
+
+/******************************************************************************
+ * Queue methods
+ *****************************************************************************/
+Queue* queue_new_empty_queue();
+void queue_destroy(Queue *queue);
+
+QueueElement *queue_create_element(const void *data);
+
+void queue_print(Queue *queue);
+
+int queue_dequeue(Queue *queue, void **data);
+int queue_enqueue(Queue *queue, const void *data);
 #endif
