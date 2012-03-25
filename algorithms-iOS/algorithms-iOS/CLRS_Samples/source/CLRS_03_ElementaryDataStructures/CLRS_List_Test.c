@@ -9,79 +9,55 @@
 #ifndef TONNY_IOS_APP
 int main(void){
 
-  List *empty_list = new_empty_list();
-  print_list(empty_list);
-  destroy_list(empty_list);
+  List *empty_list = list_new_empty_list();
+  fprintf(stdout, "Test Case 0\n-------------------\n");
+  list_print(empty_list);
+  list_destroy(empty_list);
 
-  fprintf(stdout, "Test Case 1\n-------------------\n");
-  List *list_a = new_empty_list();
-  int *value_1 = (int *)malloc(sizeof(int)); *value_1 = 1;
-  int *value_2 = (int *)malloc(sizeof(int)); *value_2 = 2;
-  int *value_3 = (int *)malloc(sizeof(int)); *value_3 = 3;
-  int *value_4 = (int *)malloc(sizeof(int)); *value_4 = 4;
+  fprintf(stdout, "\nTest Case 1\n-------------------\n");
+  List *list_a = list_new_empty_list();
+  for (int i=1; i<=10; i++){
+    int *value = (int *)malloc(sizeof(int)); 
+    *value = 1;
+    list_insert_data_after_element(list_a, (void *)value, list_a->tail);
+  }
 
-  insert_element_to_list_at_head(list_a, value_1);
-  insert_element_to_list_at_head(list_a, value_2);
-  insert_element_to_list_at_head(list_a, value_3);
-  insert_element_to_list_at_head(list_a, value_4);
-  print_list(list_a);
-  destroy_list(list_a);
+  list_print(list_a);
 
-  fprintf(stdout, "Test Case 2\n-------------------\n");
-  List *list_b = new_empty_list();
-  int *b_value_1 = (int *)malloc(sizeof(int)); *b_value_1 = 1;
-  int *b_value_2 = (int *)malloc(sizeof(int)); *b_value_2 = 2;
-  int *b_value_3 = (int *)malloc(sizeof(int)); *b_value_3 = 3;
-  int *b_value_4 = (int *)malloc(sizeof(int)); *b_value_4 = 4;
-  insert_element_to_list_at_head(list_b, b_value_1);
-  insert_element_to_list_at_end(list_b, b_value_2);
-  insert_element_to_list_at_end(list_b, b_value_3);
-  insert_element_to_list_at_end(list_b, b_value_4);
-  print_list(list_b);
-  destroy_list(list_b);
+  fprintf(stdout, "\nTest Case 2\n-------------------\n");
+  for (int i=11; i<=20; i++){
+    int *value = (int *)malloc(sizeof(int)); 
+    *value = i;
+    if (i % 2 == 0){
+      list_insert_data_after_element(list_a, value, NULL);
+    }else{
+      list_insert_data_after_element(list_a, (void *)value, list_a->tail);
+    }
+  }
+  list_print(list_a);
 
-  fprintf(stdout, "Test Case 3\n-------------------\n");
-  List *list_c = new_empty_list();
-  int *c_value_1 = (int *)malloc(sizeof(int)); *c_value_1 = 1;
-  int *c_value_2 = (int *)malloc(sizeof(int)); *c_value_2 = 2;
-  int *c_value_3 = (int *)malloc(sizeof(int)); *c_value_3 = 3;
-  int *c_value_4 = (int *)malloc(sizeof(int)); *c_value_4 = 4;
-  insert_element_to_list_at_head(list_c, c_value_1);
-  insert_element_to_list_at_end(list_c, c_value_2);
-  insert_element_to_list_after_element(list_c, c_value_3, list_c->head);
-  insert_element_to_list_before_element(list_c, c_value_4, list_c->tail);
-  print_list(list_c);
-  destroy_list(list_c);
+  fprintf(stdout, "\nTest Case 3\n-------------------\n");
+  for (int i=0; i<3; i++){
+    void *data = NULL;
+    list_remove_element(list_a, list_a->head, &data);
+    fprintf(stdout, "removed an element[%3d]\n", *(int *)data);
+    free(data);
+  }
+  list_print(list_a);
 
-  fprintf(stdout, "Test Case 4\n-------------------\n");
-  List *list_d = new_empty_list();
-  int *d_value_1 = (int *)malloc(sizeof(int)); *d_value_1 = 1;
-  int *d_value_2 = (int *)malloc(sizeof(int)); *d_value_2 = 2;
-  int *d_value_3 = (int *)malloc(sizeof(int)); *d_value_3 = 3;
-  int *d_value_4 = (int *)malloc(sizeof(int)); *d_value_4 = 4;
-  insert_element_to_list_at_head(list_d, d_value_2);
-  insert_element_to_list_at_end(list_d, d_value_1);
-  insert_element_to_list_after_element(list_d, d_value_3, list_d->head);
-  insert_element_to_list_after_element(list_d, d_value_4, list_d->head);
-  print_list(list_d);
-  int *d_value_5 = (int *)malloc(sizeof(int)); *d_value_5 = 5;
-  ListElement *newElement = create_an_element(d_value_5);
-  assert(false == list_has_element(list_d, newElement));
-  assert(true == list_has_element(list_d, list_d->head));
-  remove_element_from_list(list_d, list_d->head);
-  fprintf(stdout, "removed head\n");
-  print_list(list_d);
-  remove_element_from_list(list_d, list_d->tail);
-  fprintf(stdout, "removed tail\n");
-  print_list(list_d);
-  remove_element_from_list(list_d, list_d->head);
-  fprintf(stdout, "removed head\n");
-  print_list(list_d);
-  remove_element_from_list(list_d, list_d->head);
-  fprintf(stdout, "removed head\n");
-  print_list(list_d);
-  destroy_list(list_d);
-  free(d_value_5);
+  fprintf(stdout, "\nTest Case 4\n-------------------\n");
+  for (int i=0; i<3; i++){
+    void *data = NULL;
+    list_remove_element(list_a, list_a->tail, &data);
+    fprintf(stdout, "removed an element[%3d]\n", *(int *)data);
+    free(data);
+  }
+  list_print(list_a);
+
+  list_destroy(list_a);
+  fprintf(stdout, "Test Case 5\n-------------------\n");
+  list_print(list_a);
+
 
   return 0;
 }

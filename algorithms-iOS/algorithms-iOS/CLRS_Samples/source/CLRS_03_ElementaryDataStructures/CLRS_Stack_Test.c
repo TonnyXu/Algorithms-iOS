@@ -9,29 +9,32 @@
 #ifndef TONNY_IOS_APP
 int main(void){
   fprintf(stdout, "Test Case 1\n===========================\n");
-  Stack *empty_stack = new_empty_stack();
-  print_stack(empty_stack);
-  destroy_stack(empty_stack);
+  Stack *empty_stack = stack_new_empty_stack();
+  stack_print(empty_stack);
+  stack_destroy(empty_stack);
 
-  fprintf(stdout, "Test Case 2\n===========================\n");
-  Stack *stack_a = new_empty_stack();
-  int *value_1 = (int *)malloc(sizeof(int)); *value_1 = 1;
-  stack_push_data(stack_a, value_1);
-  print_stack(stack_a);
-  int *value_2 = (int *)malloc(sizeof(int)); *value_2 = 1;
-  stack_push_data(stack_a, value_2);
-  print_stack(stack_a);
-  int *value_3 = (int *)malloc(sizeof(int)); *value_3 = 1;
-  stack_push_data(stack_a, value_3);
-  print_stack(stack_a);
-  int *value_4 = (int *)malloc(sizeof(int)); *value_4 = 1;
-  stack_push_data(stack_a, value_4);
-  print_stack(stack_a);
+  fprintf(stdout, "\nTest Case 2\n===========================\n");
+  Stack *stack_a = stack_new_empty_stack();
+  for (int i=1; i<=10; i++){
+    int *value = (int *)malloc(sizeof(int)); 
+    *value = i;
+    stack_push_data(stack_a, value);
+  }
+  stack_print(stack_a);
 
-  fprintf(stdout, "Test Case 3\n===========================\n");
-  fprintf(stdout, "Test Case 4\n===========================\n");
-  fprintf(stdout, "Test Case 5\n===========================\n");
-  fprintf(stdout, "Test Case 6\n===========================\n");
+  fprintf(stdout, "\nTest Case 3\n===========================\n");
+  for (int i=1; i<=5; i++){
+    void *data = NULL;
+    stack_pop(stack_a, &data);
+    fprintf(stdout, "Popped: %d\n", *(int *)data);
+    free(data);
+  }
+  stack_print(stack_a);
+
+  fprintf(stdout, "\nTest Case 4\n===========================\n");
+  stack_destroy(stack_a);
+  stack_print(stack_a);
+
   return 0;
 }
 #endif

@@ -1,5 +1,5 @@
 /*
- * List.c 
+ * List.c
  *
  * Implement all the necessary methods for a List.
  */
@@ -10,7 +10,7 @@
 
 #include "CLRS_DataStructures.h"
 
-List* new_empty_list(){
+List* list_new_empty_list(){
   List *newList = (List *)malloc(sizeof(List));
   if (newList == NULL) return NULL;
 
@@ -21,7 +21,7 @@ List* new_empty_list(){
   return newList;
 }
 
-ListElement *create_an_element(const void *data){
+ListElement *list_create_element(const void *data){
   ListElement *newElement;
 
   newElement = (ListElement *)malloc(sizeof(ListElement));
@@ -39,18 +39,18 @@ ListElement *create_an_element(const void *data){
 /******************************************************************************
  * List methods - destroy
  *****************************************************************************/
-void destroy_list(List *list){
+void list_destroy(List *list){
 
   while(list->size > 0){
     ListElement *anElement = list->head;
 
-    remove_element_from_list(list, anElement);
+    /*remove_element_from_list(list, anElement);*/
+    list->head = anElement->next;
+    list->size--;
+    anElement->next = NULL;
+    free(anElement->data);
+    free(anElement);
   }
-}
-void destroy_an_element(ListElement *element){
-  free(element->data);
-  element->next = NULL;
-  free(element);
 }
 
 /******************************************************************************
@@ -71,102 +71,49 @@ bool list_has_element(List *list, ListElement *element){
     return true;
   }
 }
-int insert_element_to_list_after_element(List *list, const void *data, ListElement *theElement){
-  if (!list_has_element(list, theElement)) return -1;
-
-  // do not insert into an empty list
-  if (list->size == 0) return -1;
-
-  ListElement *newElement = create_an_element(data);
-  if (NULL == newElement) return -1;
-
-  // insert a new node after a node is easy
-  ListElement *nextElement = theElement->next;
-
-  theElement->next = newElement;
-  newElement->next = nextElement;
-
-  list->size++;
-
-  return 0;
-}
-int insert_element_to_list_before_element(List *list, const void *data, ListElement *theElement){
-  if (!list_has_element(list, theElement)) return -1;
-
-  // do not insert into an empty list
-  if (list->size == 0) return -1;
-
-  // insert a new node before a node need to search the list to find the previous node
-  ListElement *previousElement = list->head;
-  if (previousElement == theElement){
-    // the element is the head.
-    return insert_element_to_list_at_head(list, data);
+int list_insert_data_after_element(List *list, const void *data, ListElement *theElementOrNull){
+  if (NULL != theElementOrNull && !list_has_element(list, theElementOrNull)){
+    // wrong operation, could not insert the new element after the specified
+    // element.
+    return -1;
   }
 
-  // The first element is not the element
-  while (previousElement->next != theElement && NULL != previousElement){
-    previousElement = previousElement->next;
-  }
-
-  // we find the previous element now we 
-  ListElement *newElement = create_an_element(data);
+  ListElement *newElement = list_create_element(data);
   if (NULL == newElement) return -1;
 
-  newElement->next = previousElement->next;
-  previousElement->next = newElement;
-
-  list->size++;
-
-  return 0;
-}
-
-int insert_element_to_list_at_head(List *list, const void *data){
-
-  // because we only accept data as a parameter, we need to create the element
-  // by ourselves.
-  ListElement *newElement = create_an_element(data);
-  if (NULL == newElement) return -1;
-
-  if (list->tail == NULL){
-    // means it's an empty list, insert at head need to update tail
+  if (list->size == 0) {
     list->head = newElement;
     list->tail = newElement;
-  }else{
-    // a none empty list, insert at head is a little bit more easier
+  }else if (theElementOrNull == NULL){
+    // insert in the head
     newElement->next = list->head;
     list->head = newElement;
-  }
-
-  list->size++;
-
-  return 0;
-}
-int insert_element_to_list_at_end(List *list, const void *data){
-  // because we only accept data as a parameter, we need to create the element
-  // by ourselves.
-  ListElement *newElement = create_an_element(data);
-  if (NULL == newElement) return -1;
-
-  if (list->head == NULL){
-    // means it's an empty list, insert at tail need to update head
-    list->head = newElement;
-    list->tail = newElement;
   }else{
-    // a none empty list, insert at end is a little bit easier
-    list->tail->next = newElement;
-    list->tail = newElement;
+    // we can insert the element now.
+    if (theElementOrNull == list->tail){
+      // theElementOrNull is the tail, special work need to be done to 
+      // maintain the tail pointer
+      theElementOrNull->next = newElement;
+      list->tail = newElement;
+    }else{
+      newElement->next = theElementOrNull->next;
+      theElementOrNull->next = newElement;
+    }
   }
 
   list->size++;
 
   return 0;
-
 }
 
 /******************************************************************************
  * List methods - deletion
+ *
+ * The element if moved out of the list, but the value it holds should be 
+ * transferred outside the function. This is the reason why we need `**data`
+ * parameter.
  *****************************************************************************/
-int remove_element_from_list(List *list, ListElement *element){
+int list_remove_element(List *list, ListElement *element, void **data){
   // If the element has no element, do nothing.
   if (list->head == NULL) return -1;
 
@@ -175,28 +122,33 @@ int remove_element_from_list(List *list, ListElement *element){
   if (list->head == element){
     // the element is the first element.
     list->head = element->next;
-    destroy_an_element(element);
+    *data = element->data;
   }else{
     ListElement *currentElement = list->head;
-    ListElement *oldElement = NULL;
+    ListElement *prevElement = NULL;
 
     while (currentElement != element && currentElement != NULL){
-      oldElement = currentElement;
+      prevElement = currentElement;
       currentElement = currentElement->next;
     }
 
     // Not reached the tail and also find the element.
-    oldElement->next = element->next;
+    prevElement->next = element->next;
+    *data = element->data;
 
-    destroy_an_element(element);
+    if (list->tail == element){
+      list->tail = prevElement;
+    }
   }
 
+  free(element);          // free the element here or outside the function
+                          // is debatable, I choose to free it here.
   list->size--;
 
   return 0;
 }
 
-void print_list(List *list){
+void list_print(List *list){
   if (list->size == 0) {
     fprintf(stdout, "the list is empty\n");
     return;
