@@ -70,6 +70,13 @@
 		CE2CD7401668D13E0074D29B /* AlgorithmObjC */ = {
 			isa = PBXGroup;
 			children = (
+				CE2CD74E1668D35D0074D29B /* Part I Foundations */,
+				CE2CD74D1668D32C0074D29B /* Part II Sorting and Statistics */,
+				CE2CD74F1668D3890074D29B /* Part III Data Structures */,
+				CE2CD7501668D3930074D29B /* Part IV Advanced Design and Analysis Techniques */,
+				CE2CD7531668D3C50074D29B /* Part V Advanced Data Structures */,
+				CE2CD7541668D3D40074D29B /* Part VI Graph algorithms */,
+				CE2CD7551668D3E00074D29B /* Part VII Selected Topics */,
 				CE2CD7411668D13E0074D29B /* main.m */,
 				CE2CD7431668D13E0074D29B /* Supporting Files */,
 			);
@@ -82,6 +89,55 @@
 				CE2CD7441668D13E0074D29B /* AlgorithmObjC-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE2CD74D1668D32C0074D29B /* Part II Sorting and Statistics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part II Sorting and Statistics";
+			sourceTree = "<group>";
+		};
+		CE2CD74E1668D35D0074D29B /* Part I Foundations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part I Foundations";
+			sourceTree = "<group>";
+		};
+		CE2CD74F1668D3890074D29B /* Part III Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part III Data Structures";
+			sourceTree = "<group>";
+		};
+		CE2CD7501668D3930074D29B /* Part IV Advanced Design and Analysis Techniques */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part IV Advanced Design and Analysis Techniques";
+			sourceTree = "<group>";
+		};
+		CE2CD7531668D3C50074D29B /* Part V Advanced Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part V Advanced Data Structures";
+			sourceTree = "<group>";
+		};
+		CE2CD7541668D3D40074D29B /* Part VI Graph algorithms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part VI Graph algorithms";
+			sourceTree = "<group>";
+		};
+		CE2CD7551668D3E00074D29B /* Part VII Selected Topics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Part VII Selected Topics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
