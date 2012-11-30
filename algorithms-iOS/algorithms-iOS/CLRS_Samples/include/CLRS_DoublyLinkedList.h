@@ -20,7 +20,7 @@ typedef struct DoublyLinkedListElement_ {
 
   struct DoublyLinkedListElement_   *prev;
   struct DoublyLinkedListElement_   *next;
-} DoublyLinkedList;
+} DoublyLinkedListElement;
 
 typedef struct DoublyLinkedList_ {
   int                   size;
@@ -35,6 +35,7 @@ typedef struct DoublyLinkedList_ {
  *****************************************************************************/
 DoublyLinkedList *dlist_new_empty_dlist();
 DoublyLinkedListElement *dlist_create_element(const void *data);
+void dlist_destroy(DoublyLinkedList *dlist);
 
 bool dlist_has_element(DoublyLinkedList *dlist, DoublyLinkedListElement *element);
 int dlist_insert_data_after_element(DoublyLinkedList *dlist, const void *data, DoublyLinkedListElement *theElementOrNull);

@@ -18,7 +18,7 @@ int main(void){
   List *list_a = list_new_empty_list();
   for (int i=1; i<=10; i++){
     int *value = (int *)malloc(sizeof(int)); 
-    *value = 1;
+    *value = i;
     list_insert_data_after_element(list_a, (void *)value, list_a->tail);
   }
 

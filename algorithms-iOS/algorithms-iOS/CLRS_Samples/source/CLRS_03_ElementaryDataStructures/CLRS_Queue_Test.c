@@ -26,11 +26,22 @@ int main(void){
     void *data = NULL;
     queue_dequeue(queue_a, &data);
     fprintf(stdout, "dequeued: %d\n", *(int *)data);
+		// Here, using free() is not a good idea.
     free(data);
   }
   queue_print(queue_a);
 
   fprintf(stdout, "\nTest Case 4\n===========================\n");
+  for (int i=1; i<=5; i++){
+    void *data = NULL;
+    queue_dequeue(queue_a, &data);
+    fprintf(stdout, "dequeued: %d\n", *(int *)data);
+		// Here, using free() is not a good idea.
+    free(data);
+  }
+  queue_print(queue_a);
+
+  fprintf(stdout, "\nTest Case 5\n===========================\n");
   queue_destroy(queue_a);
   queue_print(queue_a);
 
