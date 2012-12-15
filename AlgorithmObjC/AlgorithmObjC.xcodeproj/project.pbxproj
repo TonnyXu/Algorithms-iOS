@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0F7935167C628900F330EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CD73E1668D13E0074D29B /* Foundation.framework */; };
+		CE0F7938167C628900F330EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0F7937167C628900F330EC /* main.m */; };
+		CE0F793C167C628900F330EC /* CLRSHeapTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE0F793B167C628900F330EC /* CLRSHeapTest.1 */; };
+		CE0F7940167C629700F330EC /* CLRSHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0980337166E2ACB00D83A43 /* CLRSHeap.m */; };
 		CE2CD73F1668D13E0074D29B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CD73E1668D13E0074D29B /* Foundation.framework */; };
 		CE2CD7421668D13E0074D29B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CD7411668D13E0074D29B /* main.m */; };
 		E0980338166E2ACB00D83A43 /* CLRSHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0980337166E2ACB00D83A43 /* CLRSHeap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CE0F7931167C628900F330EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CE0F793C167C628900F330EC /* CLRSHeapTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CE2CD7381668D13E0074D29B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -25,6 +39,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE0F7933167C628900F330EC /* CLRSHeapTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLRSHeapTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0F7937167C628900F330EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0F793A167C628900F330EC /* CLRSHeapTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLRSHeapTest-Prefix.pch"; sourceTree = "<group>"; };
+		CE0F793B167C628900F330EC /* CLRSHeapTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CLRSHeapTest.1; sourceTree = "<group>"; };
 		CE2CD73A1668D13E0074D29B /* AlgorithmObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2CD73E1668D13E0074D29B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE2CD7411668D13E0074D29B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,6 +52,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE0F7930167C628900F330EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0F7935167C628900F330EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE2CD7371668D13E0074D29B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +71,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0F7936167C628900F330EC /* CLRSHeapTest */ = {
+			isa = PBXGroup;
+			children = (
+				CE0F7937167C628900F330EC /* main.m */,
+				CE0F793B167C628900F330EC /* CLRSHeapTest.1 */,
+				CE0F7939167C628900F330EC /* Supporting Files */,
+			);
+			path = CLRSHeapTest;
+			sourceTree = "<group>";
+		};
+		CE0F7939167C628900F330EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0F793A167C628900F330EC /* CLRSHeapTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CE2CD72F1668D13E0074D29B = {
 			isa = PBXGroup;
 			children = (
 				CE2CD7401668D13E0074D29B /* AlgorithmObjC */,
+				CE0F7936167C628900F330EC /* CLRSHeapTest */,
 				CE2CD73D1668D13E0074D29B /* Frameworks */,
 				CE2CD73B1668D13E0074D29B /* Products */,
 			);
@@ -58,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2CD73A1668D13E0074D29B /* AlgorithmObjC */,
+				CE0F7933167C628900F330EC /* CLRSHeapTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +194,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE0F7932167C628900F330EC /* CLRSHeapTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0F793D167C628900F330EC /* Build configuration list for PBXNativeTarget "CLRSHeapTest" */;
+			buildPhases = (
+				CE0F792F167C628900F330EC /* Sources */,
+				CE0F7930167C628900F330EC /* Frameworks */,
+				CE0F7931167C628900F330EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLRSHeapTest;
+			productName = CLRSHeapTest;
+			productReference = CE0F7933167C628900F330EC /* CLRSHeapTest */;
+			productType = "com.apple.product-type.tool";
+		};
 		CE2CD7391668D13E0074D29B /* AlgorithmObjC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE2CD7491668D13E0074D29B /* Build configuration list for PBXNativeTarget "AlgorithmObjC" */;
@@ -187,11 +250,21 @@
 			projectRoot = "";
 			targets = (
 				CE2CD7391668D13E0074D29B /* AlgorithmObjC */,
+				CE0F7932167C628900F330EC /* CLRSHeapTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE0F792F167C628900F330EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0F7938167C628900F330EC /* main.m in Sources */,
+				CE0F7940167C629700F330EC /* CLRSHeap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE2CD7361668D13E0074D29B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +277,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		CE0F793E167C628900F330EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CLRSHeapTest/CLRSHeapTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE0F793F167C628900F330EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CLRSHeapTest/CLRSHeapTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CE2CD7471668D13E0074D29B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -278,6 +369,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE0F793D167C628900F330EC /* Build configuration list for PBXNativeTarget "CLRSHeapTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0F793E167C628900F330EC /* Debug */,
+				CE0F793F167C628900F330EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CE2CD7341668D13E0074D29B /* Build configuration list for PBXProject "AlgorithmObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
