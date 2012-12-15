@@ -147,3 +147,33 @@
     }
 }
 @end
+
+#define foo4random() (arc4random() % ((unsigned)100 + 1))
+void testHeapSort() {
+    NSMutableArray *data = [NSMutableArray arrayWithCapacity:20];
+    for (int i = 0; i < 20; i++) {
+        data[i] = @(foo4random());
+    }
+
+    NSLog(@"%@", data);
+
+    NSComparator comparator = ^NSComparisonResult(id obj1, id obj2) {
+        return [obj1 compare:obj2];
+    };
+
+    [CLRSHeap sort:data withComparator:comparator];
+
+    NSLog(@"%@", data);
+
+    CLRSHeap *heap = [[CLRSHeap alloc] initWithType:MAX_HEAP andCapacity:data.count andComparator:comparator];
+    for (int i = 0; i < 20; i++) {
+        data[i] = @(foo4random());
+        [heap insert:data[i]];
+    }
+
+    NSLog(@"%@", data);
+
+    while (heap.size > 0) {
+        NSLog(@"%@", [heap extract]);
+    }
+}
