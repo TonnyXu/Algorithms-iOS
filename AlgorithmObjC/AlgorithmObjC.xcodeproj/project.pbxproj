@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0F7947167C6CB300F330EC /* CLRSQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0F7946167C6CB300F330EC /* CLRSQuickSort.m */; };
+		CE0F794B167F067D00F330EC /* CLRSRandomGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0F794A167F067D00F330EC /* CLRSRandomGenerator.m */; };
 		CE2CD73F1668D13E0074D29B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CD73E1668D13E0074D29B /* Foundation.framework */; };
 		CE2CD7421668D13E0074D29B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CD7411668D13E0074D29B /* main.m */; };
 		E0980338166E2ACB00D83A43 /* CLRSHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0980337166E2ACB00D83A43 /* CLRSHeap.m */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE0F7945167C6CB300F330EC /* CLRSQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSQuickSort.h; sourceTree = "<group>"; };
+		CE0F7946167C6CB300F330EC /* CLRSQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSQuickSort.m; sourceTree = "<group>"; };
+		CE0F7949167F067D00F330EC /* CLRSRandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSRandomGenerator.h; sourceTree = "<group>"; };
+		CE0F794A167F067D00F330EC /* CLRSRandomGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSRandomGenerator.m; sourceTree = "<group>"; };
 		CE2CD73A1668D13E0074D29B /* AlgorithmObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2CD73E1668D13E0074D29B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE2CD7411668D13E0074D29B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +105,10 @@
 			children = (
 				E0980336166E2ACB00D83A43 /* CLRSHeap.h */,
 				E0980337166E2ACB00D83A43 /* CLRSHeap.m */,
+				CE0F7945167C6CB300F330EC /* CLRSQuickSort.h */,
+				CE0F7946167C6CB300F330EC /* CLRSQuickSort.m */,
+				CE0F7949167F067D00F330EC /* CLRSRandomGenerator.h */,
+				CE0F794A167F067D00F330EC /* CLRSRandomGenerator.m */,
 			);
 			name = "Part II Sorting and Statistics";
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 			files = (
 				CE2CD7421668D13E0074D29B /* main.m in Sources */,
 				E0980338166E2ACB00D83A43 /* CLRSHeap.m in Sources */,
+				CE0F7947167C6CB300F330EC /* CLRSQuickSort.m in Sources */,
+				CE0F794B167F067D00F330EC /* CLRSRandomGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
