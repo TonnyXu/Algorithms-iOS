@@ -13,7 +13,7 @@ typedef enum:NSUInteger {
     MIN_HEAP,
 }HeapType;
 
-@interface CLRSHeap : NSObject
+@interface CLRSHeapSort : NSObject
 @property (readonly) NSUInteger size;
 
 - (id)initWithType:(HeapType)type andCapacity:(NSUInteger)capacity andComparator:(NSComparator)comparator;

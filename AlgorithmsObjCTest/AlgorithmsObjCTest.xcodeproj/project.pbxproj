@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		A65D65A916806FB5004F64FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65D65A816806FB5004F64FD /* Foundation.framework */; };
 		A65D65AC16806FB5004F64FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D65AB16806FB5004F64FD /* main.m */; };
-		A65D65B016806FB5004F64FD /* AlgorithmsObjCTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A65D65AF16806FB5004F64FD /* AlgorithmsObjCTest.1 */; };
+		A65D65E916807111004F64FD /* AlgorithmsCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A65D65E816807111004F64FD /* AlgorithmsCore.dylib */; };
+		A65D65EC168071EB004F64FD /* CLRSTestHeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D65EB168071EB004F64FD /* CLRSTestHeapSort.m */; };
+		A65D65F116807295004F64FD /* CLRSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D65F016807295004F64FD /* CLRSTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +21,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				A65D65B016806FB5004F64FD /* AlgorithmsObjCTest.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -30,7 +31,11 @@
 		A65D65A816806FB5004F64FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A65D65AB16806FB5004F64FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A65D65AE16806FB5004F64FD /* AlgorithmsObjCTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlgorithmsObjCTest-Prefix.pch"; sourceTree = "<group>"; };
-		A65D65AF16806FB5004F64FD /* AlgorithmsObjCTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AlgorithmsObjCTest.1; sourceTree = "<group>"; };
+		A65D65E816807111004F64FD /* AlgorithmsCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = AlgorithmsCore.dylib; path = "../../../../Library/Developer/Xcode/DerivedData/Algorithms-ajpioxajranwsqgaareruwszuqxk/Build/Products/Debug/AlgorithmsCore.dylib"; sourceTree = "<group>"; };
+		A65D65EA168071EB004F64FD /* CLRSTestHeapSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSTestHeapSort.h; sourceTree = "<group>"; };
+		A65D65EB168071EB004F64FD /* CLRSTestHeapSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTestHeapSort.m; sourceTree = "<group>"; };
+		A65D65EF16807295004F64FD /* CLRSTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSTest.h; sourceTree = "<group>"; };
+		A65D65F016807295004F64FD /* CLRSTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65D65E916807111004F64FD /* AlgorithmsCore.dylib in Frameworks */,
 				A65D65A916806FB5004F64FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +71,7 @@
 		A65D65A716806FB5004F64FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A65D65E816807111004F64FD /* AlgorithmsCore.dylib */,
 				A65D65A816806FB5004F64FD /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -74,7 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				A65D65AB16806FB5004F64FD /* main.m */,
-				A65D65AF16806FB5004F64FD /* AlgorithmsObjCTest.1 */,
+				A65D65EF16807295004F64FD /* CLRSTest.h */,
+				A65D65F016807295004F64FD /* CLRSTest.m */,
+				A65D65EA168071EB004F64FD /* CLRSTestHeapSort.h */,
+				A65D65EB168071EB004F64FD /* CLRSTestHeapSort.m */,
 				A65D65AD16806FB5004F64FD /* Supporting Files */,
 			);
 			path = AlgorithmsObjCTest;
@@ -114,6 +124,7 @@
 		A65D659B16806FB5004F64FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CLRSTest;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Tonny Xu";
 			};
@@ -140,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65D65AC16806FB5004F64FD /* main.m in Sources */,
+				A65D65EC168071EB004F64FD /* CLRSTestHeapSort.m in Sources */,
+				A65D65F116807295004F64FD /* CLRSTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +217,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlgorithmsObjCTest/AlgorithmsObjCTest-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Algorithms-ajpioxajranwsqgaareruwszuqxk/Build/Products/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../AlgorithmObjC/**";
 			};
 			name = Debug;
 		};
@@ -213,7 +231,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlgorithmsObjCTest/AlgorithmsObjCTest-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Algorithms-ajpioxajranwsqgaareruwszuqxk/Build/Products/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../AlgorithmObjC/**";
 			};
 			name = Release;
 		};
