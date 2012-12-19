@@ -7,14 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLRSTestHeapSort.h"
+#import "CLRSTestQuickSort.h"
 
 int main(int argc, const char * argv[])
 {
   
   @autoreleasepool {
+    CLRSTestHeapSort *testingHeapSort = [CLRSTestHeapSort new];
+    [testingHeapSort test];
     
-    // insert code here...
-    NSLog(@"Hello, World!");
+    CLRSTestQuickSort *testingQuickSort = [CLRSTestQuickSort new];
+    [testingQuickSort test];
+    
   }
   return 0;
 }

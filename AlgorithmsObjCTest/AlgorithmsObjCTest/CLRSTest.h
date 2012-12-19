@@ -10,4 +10,7 @@
 
 @interface CLRSTest : NSObject
 
+- (void)test;
+- (void)prettyPrint:(NSArray *)array;
+
 @end

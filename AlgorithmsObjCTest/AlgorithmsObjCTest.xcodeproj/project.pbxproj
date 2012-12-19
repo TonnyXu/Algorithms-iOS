@@ -12,6 +12,7 @@
 		A65D65E916807111004F64FD /* AlgorithmsCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A65D65E816807111004F64FD /* AlgorithmsCore.dylib */; };
 		A65D65EC168071EB004F64FD /* CLRSTestHeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D65EB168071EB004F64FD /* CLRSTestHeapSort.m */; };
 		A65D65F116807295004F64FD /* CLRSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D65F016807295004F64FD /* CLRSTest.m */; };
+		A65D66101681D37D004F64FD /* CLRSTestQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D660F1681D37D004F64FD /* CLRSTestQuickSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		A65D65EB168071EB004F64FD /* CLRSTestHeapSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTestHeapSort.m; sourceTree = "<group>"; };
 		A65D65EF16807295004F64FD /* CLRSTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSTest.h; sourceTree = "<group>"; };
 		A65D65F016807295004F64FD /* CLRSTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTest.m; sourceTree = "<group>"; };
+		A65D660E1681D37D004F64FD /* CLRSTestQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSTestQuickSort.h; sourceTree = "<group>"; };
+		A65D660F1681D37D004F64FD /* CLRSTestQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTestQuickSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				A65D65F016807295004F64FD /* CLRSTest.m */,
 				A65D65EA168071EB004F64FD /* CLRSTestHeapSort.h */,
 				A65D65EB168071EB004F64FD /* CLRSTestHeapSort.m */,
+				A65D660E1681D37D004F64FD /* CLRSTestQuickSort.h */,
+				A65D660F1681D37D004F64FD /* CLRSTestQuickSort.m */,
 				A65D65AD16806FB5004F64FD /* Supporting Files */,
 			);
 			path = AlgorithmsObjCTest;
@@ -153,6 +158,7 @@
 				A65D65AC16806FB5004F64FD /* main.m in Sources */,
 				A65D65EC168071EB004F64FD /* CLRSTestHeapSort.m in Sources */,
 				A65D65F116807295004F64FD /* CLRSTest.m in Sources */,
+				A65D66101681D37D004F64FD /* CLRSTestQuickSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +265,7 @@
 				A65D65B516806FB5004F64FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
