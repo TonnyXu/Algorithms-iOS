@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLRSSortProtocol.h"
 
-@interface CLRSQuickSort : NSObject
+@interface CLRSQuickSort : NSObject<CLRSSortProtocol>
 
-+ (void)sort:(NSMutableArray *)data comparator:(NSComparator)comparator;
 @end

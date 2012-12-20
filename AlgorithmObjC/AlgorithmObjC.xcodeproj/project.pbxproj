@@ -11,6 +11,18 @@
 		A65D65E516807057004F64FD /* CLRSQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0F7946167C6CB300F330EC /* CLRSQuickSort.m */; };
 		A65D65E61680705B004F64FD /* CLRSHeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E0980337166E2ACB00D83A43 /* CLRSHeapSort.m */; };
 		A65D65EE1680723A004F64FD /* CLRSSort.h in Headers */ = {isa = PBXBuildFile; fileRef = A65D65ED1680723A004F64FD /* CLRSSort.h */; };
+		A65D663B16831CF7004F64FD /* CLRSMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D663A16831CF7004F64FD /* CLRSMergeSort.m */; };
+		A65D663E16831D45004F64FD /* CLRSSortProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A65D663D16831D45004F64FD /* CLRSSortProtocol.h */; };
+		A65D664116831F0C004F64FD /* CLRSCountingSort.h in Headers */ = {isa = PBXBuildFile; fileRef = A65D663F16831F0C004F64FD /* CLRSCountingSort.h */; };
+		A65D664216831F0C004F64FD /* CLRSCountingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D664016831F0C004F64FD /* CLRSCountingSort.m */; };
+		A65D664316831F0C004F64FD /* CLRSCountingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D664016831F0C004F64FD /* CLRSCountingSort.m */; };
+		A65D664416831F10004F64FD /* CLRSMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D663A16831CF7004F64FD /* CLRSMergeSort.m */; };
+		A65D664716831F27004F64FD /* CLRSRadixSort.h in Headers */ = {isa = PBXBuildFile; fileRef = A65D664516831F27004F64FD /* CLRSRadixSort.h */; };
+		A65D664816831F27004F64FD /* CLRSRadixSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D664616831F27004F64FD /* CLRSRadixSort.m */; };
+		A65D664916831F27004F64FD /* CLRSRadixSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D664616831F27004F64FD /* CLRSRadixSort.m */; };
+		A65D664C16831F37004F64FD /* CLRSBucketSort.h in Headers */ = {isa = PBXBuildFile; fileRef = A65D664A16831F36004F64FD /* CLRSBucketSort.h */; };
+		A65D664D16831F37004F64FD /* CLRSBucketSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D664B16831F37004F64FD /* CLRSBucketSort.m */; };
+		A65D664E16831F37004F64FD /* CLRSBucketSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D664B16831F37004F64FD /* CLRSBucketSort.m */; };
 		CE0F7947167C6CB300F330EC /* CLRSQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0F7946167C6CB300F330EC /* CLRSQuickSort.m */; };
 		CE0F794B167F067D00F330EC /* CLRSRandomGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0F794A167F067D00F330EC /* CLRSRandomGenerator.m */; };
 		CE2CD73F1668D13E0074D29B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CD73E1668D13E0074D29B /* Foundation.framework */; };
@@ -34,6 +46,15 @@
 		A65D65BA16807040004F64FD /* AlgorithmsCore.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AlgorithmsCore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65D65C316807040004F64FD /* AlgorithmsCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlgorithmsCore-Prefix.pch"; sourceTree = "<group>"; };
 		A65D65ED1680723A004F64FD /* CLRSSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSSort.h; sourceTree = "<group>"; };
+		A65D663916831CF7004F64FD /* CLRSMergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSMergeSort.h; sourceTree = "<group>"; };
+		A65D663A16831CF7004F64FD /* CLRSMergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSMergeSort.m; sourceTree = "<group>"; };
+		A65D663D16831D45004F64FD /* CLRSSortProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSSortProtocol.h; sourceTree = "<group>"; };
+		A65D663F16831F0C004F64FD /* CLRSCountingSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSCountingSort.h; sourceTree = "<group>"; };
+		A65D664016831F0C004F64FD /* CLRSCountingSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSCountingSort.m; sourceTree = "<group>"; };
+		A65D664516831F27004F64FD /* CLRSRadixSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSRadixSort.h; sourceTree = "<group>"; };
+		A65D664616831F27004F64FD /* CLRSRadixSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSRadixSort.m; sourceTree = "<group>"; };
+		A65D664A16831F36004F64FD /* CLRSBucketSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSBucketSort.h; sourceTree = "<group>"; };
+		A65D664B16831F37004F64FD /* CLRSBucketSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSBucketSort.m; sourceTree = "<group>"; };
 		CE0F7945167C6CB300F330EC /* CLRSQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSQuickSort.h; sourceTree = "<group>"; };
 		CE0F7946167C6CB300F330EC /* CLRSQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSQuickSort.m; sourceTree = "<group>"; };
 		CE0F7949167F067D00F330EC /* CLRSRandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSRandomGenerator.h; sourceTree = "<group>"; };
@@ -135,13 +156,22 @@
 		CE2CD74D1668D32C0074D29B /* Part II Sorting and Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				A65D65ED1680723A004F64FD /* CLRSSort.h */,
+				A65D663D16831D45004F64FD /* CLRSSortProtocol.h */,
+				CE0F7949167F067D00F330EC /* CLRSRandomGenerator.h */,
+				CE0F794A167F067D00F330EC /* CLRSRandomGenerator.m */,
 				E0980336166E2ACB00D83A43 /* CLRSHeapSort.h */,
 				E0980337166E2ACB00D83A43 /* CLRSHeapSort.m */,
 				CE0F7945167C6CB300F330EC /* CLRSQuickSort.h */,
 				CE0F7946167C6CB300F330EC /* CLRSQuickSort.m */,
-				CE0F7949167F067D00F330EC /* CLRSRandomGenerator.h */,
-				CE0F794A167F067D00F330EC /* CLRSRandomGenerator.m */,
-				A65D65ED1680723A004F64FD /* CLRSSort.h */,
+				A65D663916831CF7004F64FD /* CLRSMergeSort.h */,
+				A65D663A16831CF7004F64FD /* CLRSMergeSort.m */,
+				A65D663F16831F0C004F64FD /* CLRSCountingSort.h */,
+				A65D664016831F0C004F64FD /* CLRSCountingSort.m */,
+				A65D664516831F27004F64FD /* CLRSRadixSort.h */,
+				A65D664616831F27004F64FD /* CLRSRadixSort.m */,
+				A65D664A16831F36004F64FD /* CLRSBucketSort.h */,
+				A65D664B16831F37004F64FD /* CLRSBucketSort.m */,
 			);
 			name = "Part II Sorting and Statistics";
 			sourceTree = "<group>";
@@ -196,6 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65D65EE1680723A004F64FD /* CLRSSort.h in Headers */,
+				A65D663E16831D45004F64FD /* CLRSSortProtocol.h in Headers */,
+				A65D664116831F0C004F64FD /* CLRSCountingSort.h in Headers */,
+				A65D664716831F27004F64FD /* CLRSRadixSort.h in Headers */,
+				A65D664C16831F37004F64FD /* CLRSBucketSort.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +306,10 @@
 				A65D65E316807050004F64FD /* CLRSRandomGenerator.m in Sources */,
 				A65D65E516807057004F64FD /* CLRSQuickSort.m in Sources */,
 				A65D65E61680705B004F64FD /* CLRSHeapSort.m in Sources */,
+				A65D664316831F0C004F64FD /* CLRSCountingSort.m in Sources */,
+				A65D664416831F10004F64FD /* CLRSMergeSort.m in Sources */,
+				A65D664916831F27004F64FD /* CLRSRadixSort.m in Sources */,
+				A65D664E16831F37004F64FD /* CLRSBucketSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +321,10 @@
 				E0980338166E2ACB00D83A43 /* CLRSHeapSort.m in Sources */,
 				CE0F7947167C6CB300F330EC /* CLRSQuickSort.m in Sources */,
 				CE0F794B167F067D00F330EC /* CLRSRandomGenerator.m in Sources */,
+				A65D663B16831CF7004F64FD /* CLRSMergeSort.m in Sources */,
+				A65D664216831F0C004F64FD /* CLRSCountingSort.m in Sources */,
+				A65D664816831F27004F64FD /* CLRSRadixSort.m in Sources */,
+				A65D664D16831F37004F64FD /* CLRSBucketSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +434,7 @@
 				A65D65DD16807040004F64FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE2CD7341668D13E0074D29B /* Build configuration list for PBXProject "AlgorithmObjC" */ = {
 			isa = XCConfigurationList;

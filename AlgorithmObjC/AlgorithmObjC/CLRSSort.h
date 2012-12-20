@@ -11,6 +11,11 @@
 
 #import "CLRSHeapSort.h"
 #import "CLRSQuickSort.h"
+#import "CLRSMergeSort.h"
+#import "CLRSCountingSort.h"
+#import "CLRSRadixSort.h"
+#import "CLRSBucketSort.h"
+#import "CLRSSortProtocol.h"
 #import "CLRSRandomGenerator.h"
 
 #endif

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLRSSortProtocol.h"
 
 typedef enum:NSUInteger {
     MAX_HEAP,
