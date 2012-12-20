@@ -10,6 +10,11 @@
 
 @implementation CLRSTest
 
+- (NSString *)name{
+  return @"Set name in your sub class.";
+}
+
+
 - (void)test{
   NSLog(@"this method is mean to be overrided by sub classes.");
   abort();

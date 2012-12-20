@@ -11,10 +11,15 @@
 
 @implementation CLRSTestQuickSort
 
+- (NSString *)name{
+  return @"Quick Sort";
+}
+
+
 - (void)test{
   NSMutableArray *array = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
   
-  NSLog(@"Before Sort:");
+  NSLog(@"Before Sort:\n[%@]", self.name);
   [self prettyPrint:array];
   
   [CLRSQuickSort sort:array comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {

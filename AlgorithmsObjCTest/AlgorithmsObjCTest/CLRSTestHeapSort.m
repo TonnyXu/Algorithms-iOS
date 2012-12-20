@@ -11,10 +11,14 @@
 
 @implementation CLRSTestHeapSort
 
+- (NSString *)name{
+  return @"Heap Sort";
+}
 
 - (void)test{
   NSMutableArray *array = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
-  NSLog(@"Before Sort:");
+  
+  NSLog(@"Before Sort:\n[%@]", self.name);
   [self prettyPrint:array];
   
   [CLRSHeapSort sort:array withComparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {

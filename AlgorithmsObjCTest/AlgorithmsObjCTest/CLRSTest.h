@@ -11,6 +11,7 @@
 @interface CLRSTest : NSObject
 
 - (void)test;
+- (NSString *)name;
 - (void)prettyPrint:(NSArray *)array;
 
 @end
