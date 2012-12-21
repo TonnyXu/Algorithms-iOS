@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CLRSTestHeapSort.h"
 #import "CLRSTestQuickSort.h"
+#import "CLRSTestMergeSort.h"
 
 int main(int argc, const char * argv[])
 {
@@ -19,6 +20,9 @@ int main(int argc, const char * argv[])
     
     CLRSTestQuickSort *testingQuickSort = [CLRSTestQuickSort new];
     [testingQuickSort test];
+    
+    CLRSTestMergeSort *testingMergeSort = [CLRSTestMergeSort new];
+    [testingMergeSort test];
     
   }
   return 0;

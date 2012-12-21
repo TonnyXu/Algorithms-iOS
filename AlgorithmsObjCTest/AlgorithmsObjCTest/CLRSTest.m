@@ -22,7 +22,7 @@
 
 - (void)prettyPrint:(NSArray *)array{
   if (nil == array || array.count == 0) {
-    NSLog(@"arry is empty");
+    NSLog(@"array is empty");
     return;
   }
   

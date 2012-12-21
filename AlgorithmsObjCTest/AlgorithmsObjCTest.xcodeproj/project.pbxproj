@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61542A816845D0C004611BD /* CLRSTestMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A61542A716845D0C004611BD /* CLRSTestMergeSort.m */; };
 		A65D65A916806FB5004F64FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65D65A816806FB5004F64FD /* Foundation.framework */; };
 		A65D65E916807111004F64FD /* AlgorithmsCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A65D65E816807111004F64FD /* AlgorithmsCore.dylib */; };
 		A65D662C16831814004F64FD /* CLRSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D662616831814004F64FD /* CLRSTest.m */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A61542A616845D0C004611BD /* CLRSTestMergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSTestMergeSort.h; sourceTree = "<group>"; };
+		A61542A716845D0C004611BD /* CLRSTestMergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTestMergeSort.m; sourceTree = "<group>"; };
 		A65D65A416806FB5004F64FD /* AlgorithmsObjCTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsObjCTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65D65A816806FB5004F64FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A65D65E816807111004F64FD /* AlgorithmsCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = AlgorithmsCore.dylib; path = "../../../../Library/Developer/Xcode/DerivedData/Algorithms-ajpioxajranwsqgaareruwszuqxk/Build/Products/Debug/AlgorithmsCore.dylib"; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				A65D662916831814004F64FD /* CLRSTestQuickSort.h */,
 				A65D662A16831814004F64FD /* CLRSTestQuickSort.m */,
 				A65D662B16831814004F64FD /* main.m */,
+				A61542A616845D0C004611BD /* CLRSTestMergeSort.h */,
+				A61542A716845D0C004611BD /* CLRSTestMergeSort.m */,
 				A65D65AD16806FB5004F64FD /* Supporting Files */,
 			);
 			path = AlgorithmsObjCTest;
@@ -159,6 +164,7 @@
 				A65D662D16831814004F64FD /* CLRSTestHeapSort.m in Sources */,
 				A65D662E16831814004F64FD /* CLRSTestQuickSort.m in Sources */,
 				A65D662F16831814004F64FD /* main.m in Sources */,
+				A61542A816845D0C004611BD /* CLRSTestMergeSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
