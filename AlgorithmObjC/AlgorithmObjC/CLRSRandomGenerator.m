@@ -25,4 +25,38 @@
   return array;
 }
 
++ (NSMutableArray *)sortedNumbersArrayFor:(NSUInteger)numberOfElement order:(NSComparisonResult)order{
+  NSMutableArray *array = [NSMutableArray array];
+  if (order == NSOrderedAscending) {
+    for (NSUInteger i=0; i < numberOfElement; i++) {
+      [array addObject:@(i)];
+    }
+  }else{
+    for (NSUInteger i=numberOfElement; i > 0; i--) {
+      [array addObject:@(i)];
+    }
+  }
+  
+  return array;
+}
+
++ (NSMutableArray *)groupedNumbersArrayFor:(NSUInteger)numberOfEachGroup groupCount:(NSUInteger)groupCount{
+  NSMutableSet *set = [NSMutableSet set];
+  NSUInteger i = 0;
+  while (set.count < groupCount) {
+    NSUInteger n = arc4random() % 1000;
+    [set addObject:@(n)];
+    i++;
+  }
+  
+  NSMutableArray *array = [NSMutableArray array];
+  for (NSUInteger j = 0; j < numberOfEachGroup; j++) {
+    [set enumerateObjectsUsingBlock:^(NSNumber *obj, BOOL *stop) {
+      [array addObject:[obj copy]];
+    }];
+  }
+  
+  return array;
+}
+
 @end

@@ -334,10 +334,13 @@
 		A65D65DC16807040004F64FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(SRCROOT)/";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlgorithmsCore/AlgorithmsCore-Prefix.pch";
+				INSTALL_PATH = /Library/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -345,10 +348,13 @@
 		A65D65DD16807040004F64FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(SRCROOT)/";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlgorithmsCore/AlgorithmsCore-Prefix.pch";
+				INSTALL_PATH = /Library/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -17,7 +17,6 @@
 
 - (void)test{
   NSMutableArray *array = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
-  
   NSLog(@"Before Sort:\n[%@]", self.name);
   [self prettyPrint:array];
   
