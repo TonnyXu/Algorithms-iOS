@@ -11,8 +11,6 @@
 @interface CLRSRandomGenerator : NSObject
 
 + (NSMutableArray *)randomNumbersArrayFor:(NSUInteger)numberOfElement max:(NSUInteger)maxValue;
-
 + (NSMutableArray *)sortedNumbersArrayFor:(NSUInteger)numberOfElement order:(NSComparisonResult)order;
-
 + (NSMutableArray *)groupedNumbersArrayFor:(NSUInteger)numberOfEachGroup groupCount:(NSUInteger)groupCount;
 @end

@@ -138,6 +138,9 @@
 }
 
 + (void)sort:(NSMutableArray *)array withComparator:(NSComparator)comparator {
+  if (array == nil || array.count == 0) {
+    return;
+  }
     CLRSHeapSort *heap = [[CLRSHeapSort alloc] initWithType:MIN_HEAP andArray:array andComparator:comparator];
 
     while (heap.size > 0) {

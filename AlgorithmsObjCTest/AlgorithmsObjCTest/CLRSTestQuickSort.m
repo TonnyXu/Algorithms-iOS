@@ -16,56 +16,20 @@
 }
 
 - (void)test{
-  NSMutableArray *array = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
+  [super test];
   
-  NSLog(@"Before Sort:\n[%@]", self.name);
-  [self prettyPrint:array];
-  
-  [CLRSQuickSort sort:array comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
-    return [obj1 compare:obj2];
+  NSArray *testSet = [self testSet];
+  [testSet enumerateObjectsUsingBlock:^(NSMutableArray *testArray, NSUInteger idx, BOOL *stop) {
+    NSLog(@"Before Sort:");
+    [self prettyPrint:testArray];
+    
+    [CLRSQuickSort sort:testArray comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
+      return [obj1 compare:obj2];
+    }];
+    
+    NSLog(@"After Sort:");
+    [self prettyPrint:testArray];
   }];
-  
-  NSLog(@"After Sort:");
-  [self prettyPrint:array];
-  
-  /****************************************************************************/
-  NSMutableArray *array2 = [CLRSRandomGenerator sortedNumbersArrayFor:20 order:NSOrderedAscending];
-  
-  NSLog(@"Before Sort:\n[%@]", self.name);
-  [self prettyPrint:array2];
-  
-  [CLRSQuickSort sort:array2 comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
-    return [obj1 compare:obj2];
-  }];
-  
-  NSLog(@"After Sort:");
-  [self prettyPrint:array2];
-  
-  /****************************************************************************/
-  NSMutableArray *array3 = [CLRSRandomGenerator sortedNumbersArrayFor:20 order:NSOrderedDescending];
-  
-  NSLog(@"Before Sort:\n[%@]", self.name);
-  [self prettyPrint:array3];
-  
-  [CLRSQuickSort sort:array3 comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
-    return [obj1 compare:obj2];
-  }];
-  
-  NSLog(@"After Sort:");
-  [self prettyPrint:array3];
-  
-  /****************************************************************************/
-  NSMutableArray *array4 = [CLRSRandomGenerator groupedNumbersArrayFor:5 groupCount:5];
-  
-  NSLog(@"Before Sort:\n[%@]", self.name);
-  [self prettyPrint:array4];
-  
-  [CLRSQuickSort sort:array4 comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
-    return [obj1 compare:obj2];
-  }];
-  
-  NSLog(@"After Sort:");
-  [self prettyPrint:array4];
   
 }
 

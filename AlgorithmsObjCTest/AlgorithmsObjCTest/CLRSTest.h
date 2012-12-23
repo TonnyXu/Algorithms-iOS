@@ -14,4 +14,6 @@
 - (NSString *)name;
 - (void)prettyPrint:(NSArray *)array;
 
+- (NSArray *)testSet;
+
 @end
