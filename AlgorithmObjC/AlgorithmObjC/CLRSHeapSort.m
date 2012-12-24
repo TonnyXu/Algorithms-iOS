@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Tonny Xu. All rights reserved.
 //
 
-#import "CLRSHeap.h"
+#import "CLRSHeapSort.h"
 
-@interface CLRSHeap ()
+@interface CLRSHeapSort ()
 @property (assign) HeapType type;
 @property (assign) NSUInteger capacity;
 @property (assign) NSUInteger size;
@@ -24,7 +24,7 @@
 - (void)swapObjectAtIndex:(NSUInteger)i withObjectAtIndex:(NSUInteger)j;
 @end
 
-@implementation CLRSHeap
+@implementation CLRSHeapSort
 - (id)initWithType:(HeapType)type andCapacity:(NSUInteger)capacity andComparator:(NSComparator)comparator {
     self = [super init];
     if (self) {
@@ -138,7 +138,10 @@
 }
 
 + (void)sort:(NSMutableArray *)array withComparator:(NSComparator)comparator {
-    CLRSHeap *heap = [[CLRSHeap alloc] initWithType:MIN_HEAP andArray:array andComparator:comparator];
+  if (array == nil || array.count == 0) {
+    return;
+  }
+    CLRSHeapSort *heap = [[CLRSHeapSort alloc] initWithType:MIN_HEAP andArray:array andComparator:comparator];
 
     while (heap.size > 0) {
         [heap swapObjectAtIndex:0 withObjectAtIndex:heap.size - 1];

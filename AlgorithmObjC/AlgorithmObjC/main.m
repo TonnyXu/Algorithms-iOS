@@ -7,17 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLRSRandomGenerator.h"
+#import "CLRSQuickSort.h"
 
 #import "CLRSHeap.h"
 
 int main(int argc, const char * argv[])
 {
-  
+
   @autoreleasepool {
-    
+
     // insert code here...
     NSLog(@"Hello, World!");
-    testHeapSort();
+    NSMutableArray *randomArray = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
+    NSLog(@"Before sort: %@", randomArray);
+    [CLRSQuickSort sort:randomArray comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
+      return [obj1 compare:obj2];
+    }];
+    NSLog(@"After  sort: %@", randomArray);
   }
   return 0;
 }

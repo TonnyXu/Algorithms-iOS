@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLRSSortProtocol.h"
 
 typedef enum:NSUInteger {
     MAX_HEAP,
     MIN_HEAP,
 }HeapType;
 
-@interface CLRSHeap : NSObject
+@interface CLRSHeapSort : NSObject
 @property (readonly) NSUInteger size;
 
 - (id)initWithType:(HeapType)type andCapacity:(NSUInteger)capacity andComparator:(NSComparator)comparator;
