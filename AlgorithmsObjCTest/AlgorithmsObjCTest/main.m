@@ -10,20 +10,18 @@
 #import "CLRSTestHeapSort.h"
 #import "CLRSTestQuickSort.h"
 #import "CLRSTestMergeSort.h"
+#import "CLRSTestCountingSort.h"
 
 int main(int argc, const char * argv[])
 {
   
   @autoreleasepool {
-    CLRSTestHeapSort *testingHeapSort = [CLRSTestHeapSort new];
-    [testingHeapSort test];
+    NSArray *testClasses = @[@"CLRSTestHeapSort", @"CLRSTestQuickSort", @"CLRSTestMergeSort", @"CLRSTestCountingSort"];
     
-    CLRSTestQuickSort *testingQuickSort = [CLRSTestQuickSort new];
-    [testingQuickSort test];
-    
-    CLRSTestMergeSort *testingMergeSort = [CLRSTestMergeSort new];
-    [testingMergeSort test];
-    
+    [testClasses enumerateObjectsUsingBlock:^(NSString *className, NSUInteger idx, BOOL *stop) {
+      CLRSTest *testClassInstance = [NSClassFromString(className) new];
+      [testClassInstance test];
+    }];
   }
   return 0;
 }

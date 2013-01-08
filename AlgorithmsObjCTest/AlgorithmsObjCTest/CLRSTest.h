@@ -10,10 +10,13 @@
 
 @interface CLRSTest : NSObject
 
+// Methods to be overridden
 - (void)test;
 - (NSString *)name;
-- (void)prettyPrint:(NSArray *)array;
 
+// Most of the time, you don't need to override these 2 methods.
+// If you want to generate your own test set, please override `- testSet` method.
+- (void)prettyPrint:(NSArray *)array;
 - (NSArray *)testSet;
 
 @end

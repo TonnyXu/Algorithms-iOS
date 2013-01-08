@@ -6,31 +6,7 @@ This is a project to demonstrate all the algorithms introduced by [Introduction 
 > 
 > Solutions to exercises and problems:
 > 
-> * [Chapter 2: Getting Started](http://mitpress.mit.edu/algorithms/solutions/chap2-solutions.pdf)
-> * [Chapter 3: Growth of Functions](http://mitpress.mit.edu/algorithms/solutions/chap3-solutions.pdf)
-> * [Chapter 4: Divide-and-Conquer](http://mitpress.mit.edu/algorithms/solutions/chap4-solutions.pdf)
-> * [Chapter 5: Probabilistic Analysis and Randomized Algorithms](http://mitpress.mit.edu/algorithms/solutions/chap5-solutions.pdf)
-> * [Chapter 6: Heapsort](http://mitpress.mit.edu/algorithms/solutions/chap6-solutions.pdf)
-> * [Chapter 7: Quicksort](http://mitpress.mit.edu/algorithms/solutions/chap7-solutions.pdf)
-> * [Chapter 8: Sorting in Linear Time](http://mitpress.mit.edu/algorithms/solutions/chap8-solutions.pdf)
-> * [Chapter 9: Medians and Order Statistics](http://mitpress.mit.edu/algorithms/solutions/chap9-solutions.pdf)
-> * Chapter 10:
-> * [Chapter 11: Hash Tables](http://mitpress.mit.edu/algorithms/solutions/chap11-solutions.pdf)
-> * [Chapter 12: Binary Search Trees](http://mitpress.mit.edu/algorithms/solutions/chap12-solutions.pdf)
-> * [Chapter 13: Red-Black Trees](http://mitpress.mit.edu/algorithms/solutions/chap13-solutions.pdf)
-> * [Chapter 14: Augmenting Data Structures](http://mitpress.mit.edu/algorithms/solutions/chap14-solutions.pdf)
-> * [Chapter 15: Dynamic Programming](http://mitpress.mit.edu/algorithms/solutions/chap15-solutions.pdf)
-> * [Chapter 16: Greedy Algorithms](http://mitpress.mit.edu/algorithms/solutions/chap16-solutions.pdf)
-> * [Chapter 17: Amortized Analysis](http://mitpress.mit.edu/algorithms/solutions/chap17-solutions.pdf)
-> * Chapter 18: 
-> * Chapter 19: 
-> * Chapter 20: 
-> * [Chapter 21: Data Structures for Disjoint Sets](http://mitpress.mit.edu/algorithms/solutions/chap21-solutions.pdf)
-> * [Chapter 22: Elementary Graph Algorithms](http://mitpress.mit.edu/algorithms/solutions/chap22-solutions.pdf)
-> * [Chapter 23: Minimum Spanning Trees](http://mitpress.mit.edu/algorithms/solutions/chap23-solutions.pdf)
-> * [Chapter 24: Single-Source Shortest Paths](http://mitpress.mit.edu/algorithms/solutions/chap24-solutions.pdf)
-> * [Chapter 25: All-Pairs Shortest Paths](http://mitpress.mit.edu/algorithms/solutions/chap25-solutions.pdf)
-> * [Chapter 26: Maximum Flow](http://mitpress.mit.edu/algorithms/solutions/chap26-solutions.pdf)
+> * [Solutions in PDF](http://mitpress.mit.edu/sites/default/files/titles/content/9780262033848_Solutions_to_Exercises_and_Problems.pdf)
 
 ## iOS features used
 1. Using [storyboarding](https://developer.apple.com/library/IOs/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_2.html#//apple_ref/doc/uid/00200-SW3)
@@ -39,6 +15,9 @@ This is a project to demonstrate all the algorithms introduced by [Introduction 
 4. Is an [universal app](https://developer.apple.com/library/IOs/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW24)
 
 ## Change History
+* [2013-01-08] Added Counting Sort
+* [2012-12-10] Added [ghawkgu](https://github.com/ghawkgu) as a contributor and team member.
+* [2012-12-10] Changed project's direction. To focus on finishing the solution at first.
 * [2012-01-10] Project started.
 
 ## License
