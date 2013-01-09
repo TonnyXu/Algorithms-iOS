@@ -1,5 +1,5 @@
 ## What is `Algorithm-iOS`
-This is a project to demonstrate all the algorithms introduced by [Introduction to Algorithms 2nd edition](http://d.pr/Q8mg), written by [Thomas H. Cormen](http://www.amazon.co.jp/Thomas-H.-Cormen/e/B000AQ24AS/ref=ntt_athr_dp_pel_pop_1), [Charles E. Leiserson](http://www.amazon.co.jp/Charles-E.-Leiserson/e/B000AQ6W9W/ref=ntt_athr_dp_pel_pop_2), [Ronald L. Rivest](http://www.amazon.co.jp/Ronald-L.-Rivest/e/B000AQ24MQ/ref=ntt_athr_dp_pel_pop_3), [Clifford Stein](http://www.amazon.co.jp/Clifford-Stein/e/B001K6MOAW/ref=ntt_athr_dp_pel_pop_4). 
+This is a project to demonstrate all the algorithms introduced by [Introduction to Algorithms 3rd edition](http://d.pr/Q8mg), written by [Thomas H. Cormen](http://www.amazon.co.jp/Thomas-H.-Cormen/e/B000AQ24AS/ref=ntt_athr_dp_pel_pop_1), [Charles E. Leiserson](http://www.amazon.co.jp/Charles-E.-Leiserson/e/B000AQ6W9W/ref=ntt_athr_dp_pel_pop_2), [Ronald L. Rivest](http://www.amazon.co.jp/Ronald-L.-Rivest/e/B000AQ24MQ/ref=ntt_athr_dp_pel_pop_3), [Clifford Stein](http://www.amazon.co.jp/Clifford-Stein/e/B001K6MOAW/ref=ntt_athr_dp_pel_pop_4). 
 
 > See the original web site from MIT Press
 > [Introduction to Algorithms@MIT 3rd edition](http://mitpress.mit.edu/algorithms/)
@@ -8,11 +8,10 @@ This is a project to demonstrate all the algorithms introduced by [Introduction 
 > 
 > * [Solutions in PDF](http://mitpress.mit.edu/sites/default/files/titles/content/9780262033848_Solutions_to_Exercises_and_Problems.pdf)
 
-## iOS features used
-1. Using [storyboarding](https://developer.apple.com/library/IOs/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_2.html#//apple_ref/doc/uid/00200-SW3)
-2. Using [Core Data](https://developer.apple.com/library/IOs/#documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html#//apple_ref/doc/uid/TP40001075)
-3. Using [ARC](https://developer.apple.com/library/IOs/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_2.html#//apple_ref/doc/uid/00200-SW2)
-4. Is an [universal app](https://developer.apple.com/library/IOs/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW24)
+## Objective-C features used
+1. Using [ARC](https://developer.apple.com/library/IOs/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_2.html#//apple_ref/doc/uid/00200-SW2)
+2. [Objective-C Literal](http://clang.llvm.org/docs/ObjectiveCLiterals.html)
+
 
 ## Change History
 * [2013-01-08] Added Counting Sort
