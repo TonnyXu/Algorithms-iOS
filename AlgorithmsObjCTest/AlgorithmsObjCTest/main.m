@@ -16,7 +16,7 @@ int main(int argc, const char * argv[])
 {
   
   @autoreleasepool {
-    NSArray *testClasses = @[@"CLRSTestHeapSort", @"CLRSTestQuickSort", @"CLRSTestMergeSort", @"CLRSTestCountingSort"];
+    NSArray *testClasses = @[@"CLRSTestHeapSort", @"CLRSTestQuickSort", @"CLRSTestMergeSort", @"CLRSTestCountingSort", @"CLRSTestRadixSort"];
     
     [testClasses enumerateObjectsUsingBlock:^(NSString *className, NSUInteger idx, BOOL *stop) {
       CLRSTest *testClassInstance = [NSClassFromString(className) new];
