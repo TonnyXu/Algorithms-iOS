@@ -77,6 +77,17 @@
         [resultArray addObject:obj2];
         idx2++;
       }else{
+        /* Tonny NOTE
+         * ------------
+         * Jan 10, 2013
+         * 
+         * the order of merging obj1 and obj2 when they are at the same value 
+         * will change the stable property of the merge sort algorithm.
+         * 
+         * `Obj1` from left, `Obj2` from right, so merge `obj1` at first, then
+         * merge `obj2` will maintain the stability of merge sort.
+         * 
+         */
         [resultArray addObject:obj1];
         [resultArray addObject:obj2];
         idx1++;

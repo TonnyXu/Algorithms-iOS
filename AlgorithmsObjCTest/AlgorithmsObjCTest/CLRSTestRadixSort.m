@@ -16,8 +16,14 @@
   [super test];
   
   NSArray *testSet = [self testSet];
-  [testSet enumerateObjectsUsingBlock:^(NSMutableArray *data, NSUInteger idx, BOOL *stop) {
-    [CLRSRadixSort sort:data comparator:nil];
+  [testSet enumerateObjectsUsingBlock:^(NSMutableArray *testArray, NSUInteger idx, BOOL *stop) {
+    NSLog(@"Before Sort:");
+    [self prettyPrint:testArray];
+    
+    [CLRSRadixSort sort:testArray comparator:nil];
+    
+    NSLog(@"After Sort:");
+    [self prettyPrint:testArray];
   }];
   
 }
