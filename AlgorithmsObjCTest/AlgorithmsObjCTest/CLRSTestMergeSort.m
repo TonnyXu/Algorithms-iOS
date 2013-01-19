@@ -16,16 +16,32 @@
 }
 
 - (void)test{
-  NSMutableArray *array = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
-  NSLog(@"Before Sort:\n[%@]", self.name);
-  [self prettyPrint:array];
   
-  [CLRSMergeSort sort:array comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
-    return [obj1 compare:obj2];
+  [super test];
+  
+  NSArray *testSet = [self testSet];
+  [testSet enumerateObjectsUsingBlock:^(NSMutableArray *testArray, NSUInteger idx, BOOL *stop) {
+    NSLog(@"Before Sort:");
+    [self prettyPrint:testArray];
+    
+    [CLRSMergeSort sort:testArray comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
+      return [obj1 compare:obj2];
+    }];
+    
+    NSLog(@"After Sort:");
+    [self prettyPrint:testArray];
   }];
-  
-  NSLog(@"After Sort:");
-  [self prettyPrint:array];
+
+//  NSMutableArray *array = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
+//  NSLog(@"Before Sort:\n[%@]", self.name);
+//  [self prettyPrint:array];
+//  
+//  [CLRSMergeSort sort:array comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
+//    return [obj1 compare:obj2];
+//  }];
+//  
+//  NSLog(@"After Sort:");
+//  [self prettyPrint:array];
 
 }
 
