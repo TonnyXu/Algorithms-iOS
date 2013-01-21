@@ -16,6 +16,7 @@
 		A6A24498169BE1780010693B /* CLRSTestCountingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A24497169BE1780010693B /* CLRSTestCountingSort.m */; };
 		A6A244DF169D91F90010693B /* CLRSTestRadixSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A244DE169D91F90010693B /* CLRSTestRadixSort.m */; };
 		CE5ABCC3168726C500BDFF5A /* AlgorithmsCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5ABCC2168726C500BDFF5A /* AlgorithmsCore.dylib */; };
+		E0B4110B16A3104800AF0EBD /* CLRSTestRandomizedSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B4110A16A3104800AF0EBD /* CLRSTestRandomizedSelection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		A6A244DD169D91F90010693B /* CLRSTestRadixSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSTestRadixSort.h; sourceTree = "<group>"; };
 		A6A244DE169D91F90010693B /* CLRSTestRadixSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTestRadixSort.m; sourceTree = "<group>"; };
 		CE5ABCC2168726C500BDFF5A /* AlgorithmsCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = AlgorithmsCore.dylib; path = ../AlgorithmObjC/Library/AlgorithmsCore.dylib; sourceTree = "<group>"; };
+		E0B4110916A3104800AF0EBD /* CLRSTestRandomizedSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSTestRandomizedSelection.h; sourceTree = "<group>"; };
+		E0B4110A16A3104800AF0EBD /* CLRSTestRandomizedSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSTestRandomizedSelection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				A65D65AD16806FB5004F64FD /* Supporting Files */,
 				A6A244DD169D91F90010693B /* CLRSTestRadixSort.h */,
 				A6A244DE169D91F90010693B /* CLRSTestRadixSort.m */,
+				E0B4110916A3104800AF0EBD /* CLRSTestRandomizedSelection.h */,
+				E0B4110A16A3104800AF0EBD /* CLRSTestRandomizedSelection.m */,
 			);
 			path = AlgorithmsObjCTest;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				A61542A816845D0C004611BD /* CLRSTestMergeSort.m in Sources */,
 				A6A24498169BE1780010693B /* CLRSTestCountingSort.m in Sources */,
 				A6A244DF169D91F90010693B /* CLRSTestRadixSort.m in Sources */,
+				E0B4110B16A3104800AF0EBD /* CLRSTestRandomizedSelection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
