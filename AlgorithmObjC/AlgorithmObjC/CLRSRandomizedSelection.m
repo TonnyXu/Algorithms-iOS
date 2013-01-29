@@ -43,7 +43,7 @@
 - (NSUInteger)randomizedPartitionFromIndex:(NSUInteger)from toIndex:(NSUInteger)to {
     NSUInteger size = (to - from + 1);
     NSUInteger randomIndex = (size == 0 ? 0 : arc4random() % size) + from;
-    [self swapObjectAtIndex:to withObjectAtIndex:randomIndex];
+    [self.elements exchangeObjectAtIndex:to withObjectAtIndex:randomIndex];
 
     return [self partitionFromIndex:from toIndex:to];
 }
@@ -72,17 +72,10 @@
     for (NSUInteger right = from; right < to; right++) {
         if (self.comparator(self.elements[right], pivotElement) != NSOrderedDescending) {
             left += 1;
-            [self swapObjectAtIndex:left withObjectAtIndex:right];
+            [self.elements exchangeObjectAtIndex:left withObjectAtIndex:right];
         }
     }
-
-    [self swapObjectAtIndex:left + 1 withObjectAtIndex:to];
+    [self.elements exchangeObjectAtIndex:left + 1 withObjectAtIndex:to];
     return left + 1;
-}
-
-- (void)swapObjectAtIndex:(NSUInteger)i withObjectAtIndex:(NSUInteger)j {
-    id temp = self.elements[i];
-    self.elements[i] = self.elements[j];
-    self.elements[j] = temp;
 }
 @end

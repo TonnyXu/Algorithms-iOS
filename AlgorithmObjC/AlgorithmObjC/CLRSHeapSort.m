@@ -21,7 +21,6 @@
 - (NSUInteger)parent:(NSUInteger)childIndex;
 - (NSUInteger)left:(NSUInteger)parentIndex;
 - (NSUInteger)right:(NSUInteger)parentIndex;
-- (void)swapObjectAtIndex:(NSUInteger)i withObjectAtIndex:(NSUInteger)j;
 @end
 
 @implementation CLRSHeapSort
@@ -68,12 +67,6 @@
     return [self left:parentIndex] + 1;
 }
 
-- (void)swapObjectAtIndex:(NSUInteger)i withObjectAtIndex:(NSUInteger)j {
-    id temp = self.storage[i];
-    self.storage[i] = self.storage[j];
-    self.storage[j] = temp;
-}
-
 - (void)heapify:(NSUInteger)index {
     NSUInteger i = index;
     NSUInteger left = [self left:i];
@@ -88,7 +81,7 @@
     }
 
     if (i != index) {
-        [self swapObjectAtIndex:index withObjectAtIndex:i];
+        [self.storage exchangeObjectAtIndex:index withObjectAtIndex:i];
         [self heapify:i];
     }
 }
@@ -112,7 +105,7 @@
 
 
     while (self.comparator(self.storage[index], self.storage[parentIndex]) == self.comparisonResult ) {
-        [self swapObjectAtIndex:index withObjectAtIndex:parentIndex];
+        [self.storage exchangeObjectAtIndex:index withObjectAtIndex:parentIndex];
         index = parentIndex;
         parentIndex = [self parent:index];
     }
@@ -144,7 +137,7 @@
     CLRSHeapSort *heap = [[CLRSHeapSort alloc] initWithType:MIN_HEAP andArray:array andComparator:comparator];
 
     while (heap.size > 0) {
-        [heap swapObjectAtIndex:0 withObjectAtIndex:heap.size - 1];
+        [heap.storage exchangeObjectAtIndex:0 withObjectAtIndex:heap.size - 1];
         heap.size--;
         [heap heapify:0];
     }
