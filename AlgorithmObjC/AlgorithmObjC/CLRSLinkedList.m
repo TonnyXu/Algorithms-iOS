@@ -7,18 +7,9 @@
 //
 
 #import "CLRSLinkedList.h"
-
-@interface CLRSListNode : NSObject
-@property CLRSListNode *next;
-@property CLRSListNode *prev;
-@property id payload;
-@end
-
-@implementation CLRSListNode
-@end
-
+#import "CLRSLinkedListNode.h"
 @interface CLRSLinkedList ()
-@property CLRSListNode *sentinel;
+@property CLRSLinkedListNode *sentinel;
 @end
 
 
@@ -26,7 +17,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        CLRSListNode *sentinel = [CLRSListNode new];
+        CLRSLinkedListNode *sentinel = [CLRSLinkedListNode new];
         sentinel.payload = @"(sentinel)";
         sentinel.next = sentinel;
         sentinel.prev = sentinel;
@@ -35,15 +26,15 @@
     return self;
 }
 
-- (CLRSListNode *)nodeWithObject:(id)object {
-    CLRSListNode *node = [CLRSListNode new];
+- (CLRSLinkedListNode *)nodeWithObject:(id)object {
+    CLRSLinkedListNode *node = [CLRSLinkedListNode new];
     node.payload = object;
 
     return node;
 }
 
-- (CLRSListNode *)searchForNodeContainsObject:(id)object {
-    CLRSListNode *node = self.sentinel.next; //head
+- (CLRSLinkedListNode *)searchForNodeContainsObject:(id)object {
+    CLRSLinkedListNode *node = self.sentinel.next; //head
     while (node != self.sentinel && [node.payload isNotEqualTo:object]) {
         node = node.next;
     }
@@ -51,14 +42,14 @@
 }
 
 - (id)search:(id)object {
-    CLRSListNode *node = [self searchForNodeContainsObject:object];
+    CLRSLinkedListNode *node = [self searchForNodeContainsObject:object];
     if (node == self.sentinel) return nil;
     
     return node.payload;
 }
 
 - (void)insert:(id)object {
-    CLRSListNode *node = [self nodeWithObject:object];
+    CLRSLinkedListNode *node = [self nodeWithObject:object];
 
     node.next = self.sentinel.next;
     self.sentinel.next.prev = node;
@@ -68,7 +59,7 @@
 }
 
 - (void)remove:(id)object {
-    CLRSListNode *node = [self searchForNodeContainsObject:object];
+    CLRSLinkedListNode *node = [self searchForNodeContainsObject:object];
     if (node == self.sentinel) return;
 
     node.prev.next = node.next;
@@ -76,7 +67,7 @@
 }
 
 - (NSString *)description {
-    CLRSListNode *node = self.sentinel;
+    CLRSLinkedListNode *node = self.sentinel;
     NSMutableString *output = [NSMutableString new];
     while (node = node.next, node != self.sentinel) {
         [output appendFormat:@"[ %@ ] -> ", node.payload];

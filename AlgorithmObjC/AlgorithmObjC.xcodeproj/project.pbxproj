@@ -30,6 +30,8 @@
 		E0980338166E2ACB00D83A43 /* CLRSHeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E0980337166E2ACB00D83A43 /* CLRSHeapSort.m */; };
 		E09E964A16AA791D00528EDB /* CLRSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = E09E964916AA791D00528EDB /* CLRSLinkedList.m */; };
 		E09E964B16AA844900528EDB /* CLRSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = E09E964916AA791D00528EDB /* CLRSLinkedList.m */; };
+		E0AE286616BCCEE800EA8081 /* CLRSLinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE286516BCCEE800EA8081 /* CLRSLinkedListNode.m */; };
+		E0AE286716BCD0DF00EA8081 /* CLRSLinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE286516BCCEE800EA8081 /* CLRSLinkedListNode.m */; };
 		E0B4110716A3022400AF0EBD /* CLRSRandomizedSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B4110616A3022400AF0EBD /* CLRSRandomizedSelection.m */; };
 		E0B4110D16A3119300AF0EBD /* CLRSRandomizedSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B4110616A3022400AF0EBD /* CLRSRandomizedSelection.m */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,8 @@
 		E09E964616AA780100528EDB /* CLRSList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLRSList.h; sourceTree = "<group>"; };
 		E09E964816AA791D00528EDB /* CLRSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSLinkedList.h; sourceTree = "<group>"; };
 		E09E964916AA791D00528EDB /* CLRSLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSLinkedList.m; sourceTree = "<group>"; };
+		E0AE286416BCCEE800EA8081 /* CLRSLinkedListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSLinkedListNode.h; sourceTree = "<group>"; };
+		E0AE286516BCCEE800EA8081 /* CLRSLinkedListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSLinkedListNode.m; sourceTree = "<group>"; };
 		E0B4110516A3022400AF0EBD /* CLRSRandomizedSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSRandomizedSelection.h; sourceTree = "<group>"; };
 		E0B4110616A3022400AF0EBD /* CLRSRandomizedSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSRandomizedSelection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				E09E964616AA780100528EDB /* CLRSList.h */,
+				E0AE286416BCCEE800EA8081 /* CLRSLinkedListNode.h */,
+				E0AE286516BCCEE800EA8081 /* CLRSLinkedListNode.m */,
 				E09E964816AA791D00528EDB /* CLRSLinkedList.h */,
 				E09E964916AA791D00528EDB /* CLRSLinkedList.m */,
 			);
@@ -317,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AE286716BCD0DF00EA8081 /* CLRSLinkedListNode.m in Sources */,
 				E0B4110D16A3119300AF0EBD /* CLRSRandomizedSelection.m in Sources */,
 				A65D65E316807050004F64FD /* CLRSRandomGenerator.m in Sources */,
 				A65D65E516807057004F64FD /* CLRSQuickSort.m in Sources */,
@@ -343,6 +350,7 @@
 				A65D664D16831F37004F64FD /* CLRSBucketSort.m in Sources */,
 				E0B4110716A3022400AF0EBD /* CLRSRandomizedSelection.m in Sources */,
 				E09E964A16AA791D00528EDB /* CLRSLinkedList.m in Sources */,
+				E0AE286616BCCEE800EA8081 /* CLRSLinkedListNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
