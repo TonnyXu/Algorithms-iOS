@@ -18,7 +18,7 @@
 + (id)selectNth:(NSUInteger)n fromArray:(NSArray *)array withComparator:(NSComparator)comparator {
     if (array.count == 0) return nil;
 
-    CLRSRandomizedSelection *selector = [self new];
+    CLRSRandomizedSelection *selector = [CLRSRandomizedSelection new];
     selector.comparator = comparator;
     selector.elements = [array mutableCopy];
     selector.position = n - 1;
