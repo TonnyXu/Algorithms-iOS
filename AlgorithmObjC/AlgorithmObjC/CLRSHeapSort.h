@@ -24,3 +24,5 @@ typedef enum:NSUInteger {
 - (id)extract;
 + (void)sort:(NSMutableArray *)array withComparator:(NSComparator)comparator;
 @end
+
+void testHeapSort();

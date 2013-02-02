@@ -10,11 +10,13 @@
 #import "CLRSRandomGenerator.h"
 #import "CLRSQuickSort.h"
 
+#import "CLRSHeap.h"
+
 int main(int argc, const char * argv[])
 {
-  
+
   @autoreleasepool {
-    
+
     // insert code here...
     NSLog(@"Hello, World!");
     NSMutableArray *randomArray = [CLRSRandomGenerator randomNumbersArrayFor:20 max:100];
@@ -26,4 +28,3 @@ int main(int argc, const char * argv[])
   }
   return 0;
 }
-

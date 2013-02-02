@@ -28,6 +28,10 @@
 		CE2CD73F1668D13E0074D29B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CD73E1668D13E0074D29B /* Foundation.framework */; };
 		CE2CD7421668D13E0074D29B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CD7411668D13E0074D29B /* main.m */; };
 		E0980338166E2ACB00D83A43 /* CLRSHeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E0980337166E2ACB00D83A43 /* CLRSHeapSort.m */; };
+		E09E964A16AA791D00528EDB /* CLRSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = E09E964916AA791D00528EDB /* CLRSLinkedList.m */; };
+		E09E964B16AA844900528EDB /* CLRSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = E09E964916AA791D00528EDB /* CLRSLinkedList.m */; };
+		E0B4110716A3022400AF0EBD /* CLRSRandomizedSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B4110616A3022400AF0EBD /* CLRSRandomizedSelection.m */; };
+		E0B4110D16A3119300AF0EBD /* CLRSRandomizedSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B4110616A3022400AF0EBD /* CLRSRandomizedSelection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +69,11 @@
 		CE2CD7441668D13E0074D29B /* AlgorithmObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlgorithmObjC-Prefix.pch"; sourceTree = "<group>"; };
 		E0980336166E2ACB00D83A43 /* CLRSHeapSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSHeapSort.h; sourceTree = "<group>"; };
 		E0980337166E2ACB00D83A43 /* CLRSHeapSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSHeapSort.m; sourceTree = "<group>"; };
+		E09E964616AA780100528EDB /* CLRSList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLRSList.h; sourceTree = "<group>"; };
+		E09E964816AA791D00528EDB /* CLRSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSLinkedList.h; sourceTree = "<group>"; };
+		E09E964916AA791D00528EDB /* CLRSLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSLinkedList.m; sourceTree = "<group>"; };
+		E0B4110516A3022400AF0EBD /* CLRSRandomizedSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRSRandomizedSelection.h; sourceTree = "<group>"; };
+		E0B4110616A3022400AF0EBD /* CLRSRandomizedSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRSRandomizedSelection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +181,8 @@
 				A65D664616831F27004F64FD /* CLRSRadixSort.m */,
 				A65D664A16831F36004F64FD /* CLRSBucketSort.h */,
 				A65D664B16831F37004F64FD /* CLRSBucketSort.m */,
+				E0B4110516A3022400AF0EBD /* CLRSRandomizedSelection.h */,
+				E0B4110616A3022400AF0EBD /* CLRSRandomizedSelection.m */,
 			);
 			name = "Part II Sorting and Statistics";
 			sourceTree = "<group>";
@@ -186,6 +197,9 @@
 		CE2CD74F1668D3890074D29B /* Part III Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				E09E964616AA780100528EDB /* CLRSList.h */,
+				E09E964816AA791D00528EDB /* CLRSLinkedList.h */,
+				E09E964916AA791D00528EDB /* CLRSLinkedList.m */,
 			);
 			name = "Part III Data Structures";
 			sourceTree = "<group>";
@@ -303,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B4110D16A3119300AF0EBD /* CLRSRandomizedSelection.m in Sources */,
 				A65D65E316807050004F64FD /* CLRSRandomGenerator.m in Sources */,
 				A65D65E516807057004F64FD /* CLRSQuickSort.m in Sources */,
 				A65D65E61680705B004F64FD /* CLRSHeapSort.m in Sources */,
@@ -310,6 +325,7 @@
 				A65D664416831F10004F64FD /* CLRSMergeSort.m in Sources */,
 				A65D664916831F27004F64FD /* CLRSRadixSort.m in Sources */,
 				A65D664E16831F37004F64FD /* CLRSBucketSort.m in Sources */,
+				E09E964B16AA844900528EDB /* CLRSLinkedList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +341,8 @@
 				A65D664216831F0C004F64FD /* CLRSCountingSort.m in Sources */,
 				A65D664816831F27004F64FD /* CLRSRadixSort.m in Sources */,
 				A65D664D16831F37004F64FD /* CLRSBucketSort.m in Sources */,
+				E0B4110716A3022400AF0EBD /* CLRSRandomizedSelection.m in Sources */,
+				E09E964A16AA791D00528EDB /* CLRSLinkedList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
