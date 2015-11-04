@@ -15,7 +15,7 @@
 
 - (NSManagedObjectContext *)mocInitedOnSubThread {
   
-  NSAssert(dispatch_get_current_queue() != dispatch_get_main_queue(), @"This method should not be called from main queue");
+  NSAssert(![NSThread isMainThread], @"This method should not be called from main queue");
   
   if (mocInitedOnSubThread != nil) {
     return mocInitedOnSubThread;
